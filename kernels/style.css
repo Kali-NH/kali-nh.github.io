@@ -86,11 +86,15 @@ body {
   margin-top: 25px;
   font-weight: 700;
   font-size: 20px;
+  outline-style: none;
 }
 .category {
   font-size: 18px;
   margin: 15px;
   margin-left: 30px;
+}
+details summary {
+  outline-style: none;
 }
 .model {
   font-size: 18px;
