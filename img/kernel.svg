@@ -1,0 +1,22 @@
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+ <title/>
+
+ <desc/>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title fill="#ffffff">Layer 1</title>
+  <path id="Rectangle" fill-rule="nonzero" fill="#ffffff" d="m43.5,9l-24,0c-6.35127,0 -11.5,5.14873 -11.5,11.5l0,22c0,6.35128 5.14873,11.5 11.5,11.5l24,0c6.35128,0 11.5,-5.14872 11.5,-11.5l0,-22c0,-6.35127 -5.14872,-11.5 -11.5,-11.5zm-24,5l24,0c3.589851,0 6.5,2.910151 6.5,6.5l0,22c0,3.589851 -2.910149,6.5 -6.5,6.5l-24,0c-3.58985,0 -6.5,-2.910149 -6.5,-6.5l0,-22c0,-3.589849 2.91015,-6.5 6.5,-6.5z"/>
+  <path id="Rectangle" fill-rule="nonzero" fill="#ffffff" d="m35.5,21l-8,0c-3.589849,0 -6.5,2.910151 -6.5,6.5l0,8c0,3.589851 2.910151,6.5 6.5,6.5l8,0c3.589851,0 6.5,-2.910149 6.5,-6.5l0,-8c0,-3.589849 -2.910149,-6.5 -6.5,-6.5zm-8,5l8,0c0.82843,0 1.5,0.67157 1.5,1.5l0,8c0,0.82843 -0.67157,1.5 -1.5,1.5l-8,0c-0.82843,0 -1.5,-0.67157 -1.5,-1.5l0,-8c0,-0.82843 0.67157,-1.5 1.5,-1.5z"/>
+  <rect y="3" x="24" width="5" rx="2.5" id="Rectangle" height="9" fill="#ffffff"/>
+  <rect y="3" x="34" width="5" rx="2.5" id="Rectangle" height="9" fill="#ffffff"/>
+  <rect y="51" x="24" width="5" rx="2.5" id="Rectangle" height="9" fill="#ffffff"/>
+  <rect y="51" x="34" width="5" rx="2.5" id="Rectangle" height="9" fill="#ffffff"/>
+  <rect y="50.5" x="10.5" width="5" transform="rotate(90, 6.5, 27.5) translate(-6.5, -27.5)" rx="2.5" id="Rectangle" height="9" fill="#ffffff"/>
+  <rect y="66.5" x="10.5" width="5" transform="rotate(90, 6.5, 35.5) translate(-6.5, -35.5)" rx="2.5" id="Rectangle" height="9" fill="#ffffff"/>
+  <rect y="50.5" x="110.5" width="5" transform="rotate(90, 56.5, 27.5) translate(-56.5, -27.5)" rx="2.5" id="Rectangle" height="9" fill="#ffffff"/>
+  <rect y="66.5" x="110.5" width="5" transform="rotate(90, 56.5, 35.5) translate(-56.5, -35.5)" rx="2.5" id="Rectangle" height="9" fill="#ffffff"/>
+ </g>
+</svg>
