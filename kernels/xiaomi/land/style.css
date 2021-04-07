@@ -197,7 +197,11 @@ body {
 }
 .avatar {
   height: 45px;
+  width: 45px;
   border-radius: 100%;
+  background-image: url(/img/person.svg);
+  background-position: center center;
+  background-size: cover;
 }
 .nick {
   margin-top: 14px;
