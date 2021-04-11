@@ -39,6 +39,10 @@ body {
 .navigation {
   display: flex;
 }
+.tgandpda {
+  display: flex;
+  height: 50px;
+}
 .navigation-link-pda,
 .navigation-link-tg {
   text-decoration: none;
@@ -285,13 +289,78 @@ body {
   }
 }
 @media (max-width: 750px) {
-  .rsm {
-    display: none;
+  .header {
+    display: block;
+  }
+  .header-left {
+    justify-content: center;
+  }
+  .navigation {
+    margin-top: 10px;
+    display: block;
+  }
+  .tgandpda {
+    justify-content: center;
   }
   .navigation-link-tg {
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 0px;
   }
   .navigation-link-pda {
-    margin-right: 0;
+    margin-right: 5px;
+  }
+  .rsm {
+    display: flex;
+    justify-content: center;
+  }
+  .kernel-block {
+    display: block;
+  }
+  .kernel {
+    border-bottom: 1px solid rgb(78, 78, 78);
+    border-radius: 15px;
+  }
+  .pack {
+    margin: auto;
+  }
+  .kernel-name {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  .kernel-right {
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .autor {
+    padding: 0;
+    margin-right: 10px;
+  }
+  .avatar {
+    height: 35px;
+    width: 35px;
+  }
+  .nick {
+    margin-top: 10px;
+  }
+  .source {
+    margin: 0px;
+    padding-top: 7px;
+    height: 15px;
+  }
+  .source-button {
+    font-size: 15px;
+  }
+  .id {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .header:before {
+    content: "Сайт не адаптирован под диплей меньше 400 пикселей.";
+    color: red;
   }
 }
