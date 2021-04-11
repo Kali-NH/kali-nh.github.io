@@ -279,7 +279,7 @@ body {
 }
 .autor {
   display: flex;
-  padding: 10px;
+  margin-top: 10px;
   justify-content: center;
 }
 .avatar {
@@ -302,8 +302,12 @@ body {
 .source {
   border: 1px solid rgb(78, 78, 78);
   border-radius: 20px;
-  padding: 10px;
-  margin: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin: 15px;
+  margin-bottom: 5px;
   text-align: center;
 }
 .source-button {
@@ -393,6 +397,7 @@ body {
     padding-bottom: 10px;
   }
   .autor {
+    margin-top: 0;
     padding: 0;
     margin-right: 10px;
   }
