@@ -12,6 +12,7 @@ body {
 }
 .header-left {
   display: flex;
+  height: 50px;
 }
 .logo {
   width: 50px;
@@ -89,6 +90,7 @@ body {
 }
 .phone {
   display: flex;
+  height: 100px;
 }
 #names {
   position: relative;
@@ -312,6 +314,7 @@ body {
   .rsm {
     display: flex;
     justify-content: center;
+    border-left: none;
   }
   .kernel-block {
     display: block;
@@ -358,9 +361,9 @@ body {
     display: none;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 379px) {
   .header:before {
-    content: "Сайт не адаптирован под диплей меньше 400 пикселей.";
+    content: "Сайт не адаптирован под диплей меньше 380 пикселей.";
     color: red;
   }
 }
