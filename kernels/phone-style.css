@@ -334,9 +334,10 @@ label:hover .card {
 }
 .popup {
   margin: auto;
+  background-color: rgb(43, 40, 40);
   margin-top: 200px;
   padding: 20px;
-  border: 1px solid rgb(78, 78, 78);
+  border: 2px solid rgb(78, 78, 78);
   border-radius: 10px;
   width: 300px;
   box-shadow: 0 0 50px rgb(0, 0, 0);
