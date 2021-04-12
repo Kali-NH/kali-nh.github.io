@@ -1,256 +1,534 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+  background-color: rgb(43, 40, 40);
+  color: rgb(255, 255, 255);
+  margin: auto;
+  font-family: "Comfortaa", cursive;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  padding-top: 5px;
+}
+.header-left {
+  display: flex;
+  height: 50px;
+}
+.logo {
+  width: 50px;
+  margin-left: 30px;
+  border-radius: 50px 50px 50px 50px;
+}
+.site-name {
+  font-size: 30px;
+  margin-left: 15px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.site-name:hover {
+  text-shadow: 0px 0px 4px rgb(255, 255, 255);
+}
+.site-subname {
+  font-size: 17px;
+  margin-left: 8px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-decoration: none;
+  color: rgb(128, 128, 128);
+  font-weight: 700;
+}
+.site-subname:hover {
+  text-shadow: 0px 0px 4px rgb(128, 128, 128);
+}
+.navigation {
+  display: flex;
+}
+.tgandpda {
+  display: flex;
+  height: 50px;
+}
+.navigation-link-pda,
+.navigation-link-tg {
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 20px;
+  width: 75px;
+  font-size: 15px;
+  font-weight: 700;
+  padding-top: 17px;
+  background-position: center center;
+  background-size: cover;
+}
+.navigation-link-pda:hover,
+.navigation-link-tg:hover {
+  text-shadow: 0px 0px 4px rgb(255, 255, 255);
+}
+.navigation-link-pda {
+  background-image: url(/img/4pdab.jpeg);
+}
+.navigation-link-tg {
+  background-image: url(/img/tgb.jpeg);
+}
+.rsm {
+  border-left: 1px solid #464646;
+}
+.navigation-link-autor,
+.navigation-link-git {
+  margin-top: 5px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #9e9e9e;
+  width: 75px;
+  font-size: 15px;
+}
+.navigation-link-autor:hover,
+.navigation-link-git:hover {
+  text-shadow: 0px 0px 5px rgb(128, 128, 128);
+}
+.onsite-navigation {
+  background-image: -webkit-linear-gradient(top, black, rgb(43, 40, 40));
+  height: 15px;
+}
+.container {
+  max-width: 1600px;
+  margin: auto;
+  width: 90%;
+  max-width: 1500px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.phone {
+  display: flex;
+  height: 100px;
+}
+#names {
+  position: relative;
+  list-style-type: none;
+  height: 20px;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.name {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.2s;
+}
+.showing {
+  opacity: 1;
+  z-index: 2;
+}
+.slide {
+  text-align: left;
+  font-size: 18px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.phone-info {
+  width: 100%;
+  display: block;
+  font-size: 19px;
+  margin-left: 30px;
+}
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet" />
-  <title>NetHunter Kernels</title>
-  <link rel="stylesheet" href="/kernels/phone-style.css" />
-  <link rel="shortcut icon" href="/kali-nh.github.io/img/logo-b.png" type="image/jpg" />
-</head>
+label {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: block;
+  width: 50px;
+}
+.card {
+  position: relative;
+  height: 100px;
+  width: 50px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  z-index: 20;
+}
+.card div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+.card .back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+label:hover .card {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
 
-<body>
-  <header class="header">
-    <div class="header-left">
-      <img src="/img/logo-b.png" alt="logo" class="logo" />
-      <a href="https://kali-nh.github.io/" class="site-name">NetHunter</a>
-      <a href="https://kali-nh.github.io/kernels" class="site-subname">Kernels</a>
-    </div>
-    <nav class="navigation">
-      <nav class="tgandpda"><a href="https://t.me/kali_nh" class="navigation-link-tg">Telegram</a>
-      <a href="http://4pda.ru/forum/index.php?showtopic=952937" class="navigation-link-pda">4PDA</a>
-    </nav>
-    <nav class="rsm">
-        <a href="https://t.me/gr_69" class="navigation-link-autor">Autor</a>
-        <a href="https://github.com/Kali-NH/Kali-NH.github.io" class="navigation-link-git">GitHub</a>
-      </nav>
-    </nav>
-  </header>
-  <div class="onsite-navigation">
-  </div>
-  <div class="container">
-    <div class="phone">
-      <label>
-      <div class="card">
-        <div class="front"><img src="https://s.4pda.to/BlyvfVsz0eELQKOQ0rz2Qkz2IRWkHitSw0fuUb3RP45Nz1MZ9vWUho.jpg?_=0" alt="" class="phone-icon"></div>
-      <div class="back"><img src="https://s.4pda.to/cNsLLRgUl7cPcMFz1XNiwblQpCz2PZ8EEtTnnaHUKeCIaRJsaHbV.jpg?_=0" alt="" class="phone-icon"></div>
-      </div></label>
-      <div class="phone-info">
-        <ul id="names">
-          <li class="name showing">Xiaomi Redmi 3S</li>
-          <li class="name">Xiaomi Redmi 3S Prime</li>
-          <li class="name">Xiaomi Redmi 3X</li>
-        </ul>
-        <p class="phone-codename">land</p>
-      </div>
-      <ul id="ext">
-        <a href="https://4pda.ru/devdb/xiaomi_redmi_3s" class="ext-l"><li class="ext-e">4PDA</li></a>
-        <a href="https://forum.xda-developers.com/c/xiaomi-redmi-3s.5976/" class="ext-l"><li class="ext-e">XDA</li></a>
-      </ul>
-    </div>
-    <div class="kernel-block">
-      <div class="kernel">
-        <div class="kernel-leftmiddle">
-          <div class="kenel-left"><div class="pack">Сборка</div>
-            <p class="kernel-name">Beacon</p>
-            <p class="kernel-version"><img src="/img/kernel.svg" alt="" class="kernel-icon">-</p>
-            <p class="android"><img src="/img/android.svg" alt="" class="android-icon">Oreo 8</p>
-          </div>
-          <div class="kernel-middle">
-            <div class="middle">
-              <img src="/img/yes.svg" alt="yes" class="yes-ico">
-              <p class="wifi-text">Поддержка внешних WiFi адаптеров</p>
-            </div>
-            <div class="middle">
-              <img src="/img/yes.svg" alt="yes" class="yes-ico">
-              <p class="hid-text">Поддержка HID</p>
-            </div>
-          </div>
-        </div>
-        <div class="kernel-down">
-          <div id="kernel-download">
-          <a class="download-button" href="#popup2">Скачать (пример!)</a>
-        </div>
-        <div id="popup2" class="overlay">
-          <div class="popup">
-            <h>Откуда скачать?</h>
-            <a class="close" href="#">&times;</a>
-            <div class="popup-content">
-              <a href="#" class="download">4PDA</a>
-              <a href="#" class="download">XDA</a>
-              <a href="#" class="download">Telegram</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-      <div class="kernel-right">
-        <div class="autor">
-          <img src="https://forum.xda-developers.com/data/avatars/s/6265/6265892.jpg?1600603885" alt=""
-            class="avatar">
-          <a href="https://forum.xda-developers.com/m/bawaviki.6265892/" class="nick">bawaviki</a>
-        </div>
-        <div class="source">
-          <a href="https://forum.xda-developers.com/t/beacon-kernel-oreo-lts-for-3s-prime-3x.3729932/"
-            class="source-button">Пост на XDA</a>
-        </div>
-        <p class="id">id2</p>
-      </div>
-    </div>
-    <div class="kernel-block">
-      <div class="kernel">
-        <div class="kernel-leftmiddle">
-          <div class="kenel-left">
-            <p class="kernel-name">Beacon 2.0</p>
-            <p class="kernel-version"><img src="/img/kernel.svg" alt="" class="kernel-icon">v.3.18.31
-            </p>
-            <p class="android"><img src="/img/android.svg" alt="" class="android-icon">Nougat 7</p>
-          </div>
-          <div class="kernel-middle">
-            <div class="middle">
-              <img src="/img/no.svg" alt="no" class="no-ico">
-              <p class="wifi-text">Поддержка внешних WiFi адаптеров</p>
-            </div>
-            <div class="middle">
-              <img src="/img/yes.svg" alt="yes" class="yes-ico">
-              <p class="hid-text">Поддержка HID</p>
-            </div>
-          </div>
-        </div>
-        <div class="kernel-down">
-          <div id="kernel-download">
-          <a class="download-button" href="#popup1">Скачать</a>
-         </div>
-         <div id="popup1" class="overlay">
-           <div class="popup">
-             <h>Откуда скачать?</h>
-             <a class="close" href="#">&times;</a>
-             <div class="popup-content">
-               <a href="https://4pda.ru/forum/dl/post/16308738/Beacon_land_stable2.0%28min+brightness%29.zip" class="download">4PDA</a>
-             </div>
-           </div>
-         </div>
-        </div>
-      </div>
-      <div class="kernel-right">
-        <div class="autor">
-          <img src="https://forum.xda-developers.com/data/avatars/s/6265/6265892.jpg?1600603885" alt=""
-            class="avatar">
-          <a href="https://forum.xda-developers.com/m/bawaviki.6265892/" class="nick">bawaviki</a>
-        </div>
-        <div class="source">
-          <a href="https://forum.xda-developers.com/t/beacon-kernel-support-and-queries.3659441/"
-            class="source-button">Пост на XDA</a>
-        </div>
-        <p class="id">id1</p>
-      </div>
-    </div>
-    <div class="kernel-block">
-      <div class="kernel">
-        <div class="kernel-leftmiddle">
-          <div class="kenel-left">
-            <p class="kernel-name">Beacon pre final</p>
-            <p class="kernel-version"><img src="/img/kernel.svg" alt="" class="kernel-icon">v.3.18.92
-            </p>
-            <p class="android"><img src="/img/android.svg" alt="" class="android-icon">Nougat 7</p>
-          </div>
-          <div class="kernel-middle">
-            <div class="middle">
-              <img src="/img/unknown.svg" alt="unknown" class="unknown-ico">
-              <p class="wifi-text">Поддержка внешних WiFi адаптеров</p>
-            </div>
-            <div class="middle">
-              <img src="/img/unknown.svg" alt="unknown" class="unknown-ico">
-              <p class="hid-text">Поддержка HID</p>
-            </div>
-          </div>
-        </div>
-        <div class="kernel-down">
-          <div id="kernel-download">
-            <a class="download-button" href="#popup3">Скачать</a>
-          </div>
-          <div id="popup3" class="overlay">
-            <div class="popup">
-              <h>Откуда скачать?</h>
-              <a class="close" href="#">&times;</a>
-              <div class="popup-content">
-                <a href="https://4pda.ru/forum/dl/post/17744822/Beacon_pre_final.zip"
-                  class="download">4PDA</a>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      <div class="kernel-right">
-        <div class="autor">
-          <img src="https://s.4pda.to/PnQLoYAnYNbn58KWCk2Cc9iz1WBfFRjq5kg1MGfY8MeHfiCC.png" alt="" class="avatar">
-          <a href="https://4pda.ru/forum/index.php?showuser=2045118" class="nick">wadjm81</a>
-        </div>
-        <div class="source">
-          <a href="https://4pda.ru/forum/index.php?s=&showtopic=754768&view=findpost&p=64189025"
-            class="source-button">Пост на 4PDA</a>
-        </div>
-        <p class="id">id3</p>
-      </div>
-    </div>
-    <div class="kernel-block">
-      <div class="kernel">
-        <div class="kernel-leftmiddle">
-          <div class="kenel-left">
-            <p class="kernel-name">Beacon beta 3.6</p>
-            <p class="kernel-version"><img src="/img/kernel.svg" alt="" class="kernel-icon">v.3.18.72
-            </p>
-            <p class="android"><img src="/img/android.svg" alt="" class="android-icon">Nougat 7</p>
-          </div>
-          <div class="kernel-middle">
-            <div class="middle">
-              <img src="/img/unknown.svg" alt="unknown" class="unknown-ico">
-              <p class="wifi-text">Поддержка внешних WiFi адаптеров</p>
-            </div>
-            <div class="middle">
-              <img src="/img/unknown.svg" alt="unknown" class="unknown-ico">
-              <p class="hid-text">Поддержка HID</p>
-            </div>
-          </div>
-        </div>
-        <div class="kernel-down">
-          <div id="kernel-download">
-          <a class="download-button" href="#popup4">Скачать</a>
-        </div>
-        <div id="popup4" class="overlay">
-          <div class="popup">
-            <h>Откуда скачать?</h>
-            <a class="close" href="#">&times;</a>
-            <div class="popup-content">
-              <a href="https://4pda.ru/forum/dl/post/17744824/Beacon_beta_3.6.zip" class="download">4PDA</a>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="kernel-right">
-        <div class="autor">
-          <img src="https://s.4pda.to/PnQLoYAnYNbn58KWCk2Cc9iz1WBfFRjq5kg1MGfY8MeHfiCC.png" alt="" class="avatar">
-          <a href="https://4pda.ru/forum/index.php?showuser=2045118" class="nick">wadjm81</a>
-        </div>
-        <div class="source">
-          <a href="https://4pda.ru/forum/index.php?s=&showtopic=754768&view=findpost&p=64189025"
-            class="source-button">Пост на 4PDA</a>
-        </div>
-        <p class="id">id4</p>
-      </div>
-    </div>
-    <script type="text/javascript">
-      var slides = document.querySelectorAll('#names .name');
-      var currentSlide = 0;
-      var slideInterval = setInterval(nextSlide, 3000);
+.phone-icon {
+  width: 50px;
+  background-image: url(/img/phone.svg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+}
+#ext::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(0, 0, 0);
+}
+#ext::-webkit-scrollbar-track {
+  background-color: #000000;
+  border-radius: 5px;
+}
+#ext::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgb(78, 78, 78);
+}
+#ext {
+  overflow-x: hidden;
+  min-width: 60px;
+  list-style-type: none;
+  overflow: auto;
+  height: 100px;
+  padding-left: 0;
+  margin: 0;
+}
+.ext-l:hover {
+  text-shadow: 0px 0px 4px rgb(255, 255, 255);
+}
+.ext-l {
+  text-decoration: none;
+}
+.ext-e {
+  color: rgb(250, 248, 248);
+  text-align: center;
+  margin-top: 5px;
+  border: 1px solid rgb(78, 78, 78);
+  border-radius: 15px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
+.kernel-block {
+  display: flex;
+  border: 1px solid rgb(78, 78, 78);
+  border-radius: 15px;
+  margin-top: 50px;
+}
+.pack {
+  text-align: center;
+  border: 1px solid rgb(78, 78, 78);
+  border-top: none;
+  border-radius: 0px 0px 15px 15px;
+  padding: 5px;
+  width: 100px;
+}
+.kernel {
+  display: block;
+  width: 100%;
+}
+.kernel-leftmiddle {
+  display: flex;
+  margin-left: 30px;
+}
+.kernel-name {
+  font-weight: 700;
+  font-size: 25px;
+}
+.android-icon {
+  height: 17px;
+  margin-right: 10px;
+}
+.kernel-icon {
+  height: 17px;
+  margin-right: 10px;
+  margin-left: 1px;
+}
+.kernel-version,
+.android {
+  display: flex;
+  font-size: 16px;
+}
+.kernel-middle {
+  display: block;
+  margin-top: auto;
+  margin-left: 50px;
+  padding-top: 20px;
+}
+.middle {
+  display: flex;
+}
+.unknown-ico {
+  width: 21px;
+  height: 21px;
+  box-shadow: 0px 0px 10px rgb(53, 0, 0);
+  border-radius: 100%;
+}
+.yes-ico {
+  width: 22px;
+  height: 22px;
+  box-shadow: 0px 0px 8px rgba(0, 255, 34, 0.562);
+  border-radius: 100%;
+}
+.no-ico {
+  width: 20px;
+  height: 20px;
+  box-shadow: 0px 0px 8px rgb(255, 0, 0);
+  border-radius: 100%;
+}
+.wifi-text,
+.hid-text {
+  margin-top: 3px;
+  margin-left: 10px;
+}
+.kernel-down {
+  width: auto;
+}
+.download-button {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  border-top: 1px solid rgb(78, 78, 78);
+  width: 100%;
+  padding-top: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+.download-button:hover {
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
 
-      function nextSlide() {
-        slides[currentSlide].className = 'name';
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].className = 'name showing';
-      }
-    </script>
-</body>
-</html>
+.button:hover {
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.cancel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: auto;
+  margin-top: 200px;
+  padding: 20px;
+  border: 1px solid rgb(78, 78, 78);
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 50px rgb(0, 0, 0);
+  position: relative;
+}
+.popup:hover + .name ul {
+  display: none;
+}
+.close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 12px;
+  right: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.close:hover {
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+.popup-content {
+  margin-top: 20px;
+}
+.download {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border: 1px solid rgb(78, 78, 78);
+  border-radius: 10px;
+  padding-top: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+.download:hover {
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+.kernel-right {
+  margin-left: auto;
+  border-left: 1px solid rgb(78, 78, 78);
+}
+.autor {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+.avatar {
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  background-image: url(/img/person.svg);
+  background-position: center center;
+  background-size: cover;
+}
+.nick {
+  margin-top: 14px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.nick:hover {
+  text-shadow: 0px 0px 4px rgb(255, 255, 255);
+}
+.source {
+  border: 1px solid rgb(78, 78, 78);
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin: 15px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.source-button {
+  text-decoration: none;
+  color: #ffffff;
+  white-space: pre;
+}
+.source-button:hover {
+  text-shadow: 0px 0px 4px rgb(255, 255, 255);
+}
+.id {
+  margin: 0;
+  text-align: center;
+  color: rgb(43, 40, 40);
+}
+.id:hover {
+  color: black;
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+@media (max-width: 1000px) {
+  .kernel-leftmiddle {
+    display: block;
+  }
+  .kernel-middle {
+    margin-left: 0;
+    padding-top: 0;
+  }
+  .unknown-ico,
+  .no-ico {
+    width: 18px;
+    height: 18px;
+  }
+  .yes-ico {
+    height: 20px;
+    width: 20px;
+  }
+}
+@media (max-width: 750px) {
+  .header {
+    display: block;
+    padding-bottom: 10px;
+  }
+  .header-left {
+    justify-content: center;
+  }
+  .navigation {
+    display: block;
+  }
+  .tgandpda {
+    justify-content: center;
+  }
+  .navigation-link-tg {
+    margin-left: 5px;
+    margin-right: 0px;
+  }
+  .navigation-link-pda {
+    margin-right: 5px;
+  }
+  .rsm {
+    display: flex;
+    justify-content: center;
+    border-left: none;
+  }
+  #ext {
+    display: none;
+  }
+  .kernel-block {
+    display: block;
+  }
+  .kernel {
+    border-bottom: 1px solid rgb(78, 78, 78);
+    border-radius: 15px;
+  }
+  .pack {
+    margin: auto;
+  }
+  .kernel-name {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  .kernel-right {
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .popup {
+    width: 250px;
+  }
+  .autor {
+    margin-top: 0;
+    padding: 0;
+    margin-right: 10px;
+  }
+  .avatar {
+    height: 35px;
+    width: 35px;
+  }
+  .nick {
+    margin-top: 10px;
+  }
+  .source {
+    margin: 0px;
+    padding-top: 7px;
+    height: 15px;
+  }
+  .source-button {
+    font-size: 15px;
+  }
+  .id {
+    display: none;
+  }
+}
+@media (max-width: 379px) {
+  .header:before {
+    content: "Сайт не адаптирован под диплей меньше 380 пикселей.";
+    color: red;
+  }
+}
