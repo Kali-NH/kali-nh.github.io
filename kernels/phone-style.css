@@ -111,6 +111,8 @@ body {
   position: relative;
   list-style-type: none;
   height: 20px;
+  padding-left: 0;
+  margin-bottom: 0;
 }
 .name {
   position: absolute;
@@ -138,6 +140,40 @@ body {
   font-size: 19px;
   margin-left: 30px;
 }
+
+label {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: block;
+  width: 50px;
+}
+.card {
+  position: relative;
+  height: 100px;
+  width: 50px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  z-index: 20;
+}
+.card div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+.card .back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+label:hover .card {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
 .phone-icon {
   width: 50px;
   background-image: url(/img/phone.svg);
@@ -256,10 +292,8 @@ body {
 .kernel-down {
   width: auto;
 }
-.download {
-  text-decoration: none;
-}
 .download-button {
+  text-decoration: none;
   color: #ffffff;
   text-align: center;
   display: block;
@@ -271,6 +305,76 @@ body {
   margin-bottom: 0;
 }
 .download-button:hover {
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+.button:hover {
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.cancel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: auto;
+  margin-top: 200px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid rgb(78, 78, 78);
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 50px rgb(0, 0, 0);
+  position: relative;
+}
+.popup:hover + .name ul {
+  display: none;
+}
+.close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 12px;
+  right: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.close:hover {
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+.popup-content {
+  margin-top: 20px;
+}
+.download {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border: 1px solid rgb(78, 78, 78);
+  border-radius: 10px;
+  padding-top: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+.download:hover {
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
 .kernel-right {
@@ -395,6 +499,9 @@ body {
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .popup {
+    width: 250px;
   }
   .autor {
     margin-top: 0;
