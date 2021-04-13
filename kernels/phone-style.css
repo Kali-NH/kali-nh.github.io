@@ -528,6 +528,9 @@ input {
     height: 20px;
     width: 20px;
   }
+  .content {
+    font-size: 13px;
+  }
 }
 @media (max-width: 750px) {
   .header {
@@ -605,6 +608,9 @@ input {
   }
   .id {
     display: none;
+  }
+  .content {
+    font-size: 12px;
   }
 }
 @media (max-width: 379px) {
