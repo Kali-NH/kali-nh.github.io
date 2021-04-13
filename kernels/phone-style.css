@@ -333,6 +333,7 @@ label:hover .phone-card {
   line-height: 16px;
   cursor: pointer;
   text-transform: uppercase;
+  border: 1px solid rgb(78, 78, 78);
 }
 .accordion ul li label:hover {
   box-shadow: 0px 0px 5px rgb(255, 255, 255);
@@ -575,6 +576,14 @@ input {
     text-align: center;
     margin-top: 15px;
     margin-bottom: 5px;
+  }
+  .kernel-leftmiddle {
+    margin-left: 0;
+  }
+  .kernel-version,
+  .android,
+  .kernel-middle {
+    margin-left: 20px;
   }
   .kernel-card .kernel-card-back {
     border-radius: 0px 0px 15px 15px;
