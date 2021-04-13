@@ -348,21 +348,39 @@ label:hover .phone-card {
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
   box-shadow: 0px 0px 9px rgb(255, 255, 255);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   -webkit-transition: all 500ms;
   transition: all 500ms;
 }
 .accordion .content {
+  overflow: auto;
   font-weight: 300;
   padding: 0 30px;
   -webkit-transition: all 300ms;
   transition: all 300ms;
 }
+.vertical [type="checkbox"]:checked ~ label ~ .content::-webkit-scrollbar,
+.content::-webkit-scrollbar-track,
+.content::-webkit-scrollbar-thumb {
+  -webkit-transition: all 500ms 0.5s;
+  transition: all 500ms 0.5s;
+  background-color: rgba(0, 0, 0, 0);
+}
+.content::-webkit-scrollbar {
+  width: 6px;
+  background-color: rgb(78, 78, 78);
+  border-radius: 5px;
+}
+.content::-webkit-scrollbar-track {
+  background-color: rgb(78, 78, 78);
+  border-radius: 5px;
+}
+.content::-webkit-scrollbar-thumb {
+  background-color: rgb(180, 180, 180);
+  border-radius: 5px;
+}
 .accordion .content a {
   color: aqua;
-}
-.vertical ul li {
-  overflow: hidden;
 }
 .vertical ul li label {
   margin: 5px auto;
@@ -412,7 +430,7 @@ label:hover .phone-card {
   backface-visibility: hidden;
 }
 .kernel-card .kernel-card-back {
-  border-radius: 0px 0px 0px 15px;
+  border-radius: 15px;
   color: #fff;
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
@@ -439,15 +457,20 @@ input {
   justify-content: center;
   background-color: rgb(43, 40, 40);
 }
+.kernel-card-back p {
+  margin-top: 12px;
+  margin-right: 10px;
+}
 .download {
   color: rgb(255, 255, 255);
   text-decoration: none;
   text-align: center;
   display: block;
   border: 1px solid rgb(78, 78, 78);
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 6px;
   margin: 4px;
+  margin-top: 5px;
   -webkit-transition: all 500ms;
   transition: all 500ms;
 }
@@ -538,7 +561,7 @@ input {
     width: 20px;
   }
   .content {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 @media (max-width: 750px) {
@@ -573,10 +596,6 @@ input {
   .kernel-block {
     display: block;
   }
-  .kernel {
-    border-bottom: 1px solid rgb(78, 78, 78);
-    border-radius: 15px;
-  }
   .pack {
     margin: auto;
   }
@@ -593,15 +612,23 @@ input {
   .kernel-middle {
     margin-left: 20px;
   }
-  .kernel-card .kernel-card-back {
-    border-radius: 0px 0px 15px 15px;
+  .accordion [type="checkbox"]:checked + .kernel-down {
+    display: none;
+  }
+  .kernel-down {
+    border-radius: 15px 15px 0px 0px;
   }
   .kernel-right {
     border: none;
+    border-top: 1px solid rgb(78, 78, 78);
     display: flex;
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .kernel-card-front,
+  .kernel-card-back {
+    border-radius: 15px;
   }
   .autor {
     margin-top: 0;
@@ -626,13 +653,17 @@ input {
   .id {
     display: none;
   }
+  .accordion ul li label:hover {
+    box-shadow: 0px 0px 0px rgb(255, 255, 255);
+  }
   .content {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 @media (max-width: 379px) {
   .header:before {
-    content: "Сайт не адаптирован под диплей меньше 380 пикселей.";
+    padding-left: 5px;
+    content: "Сайт не адаптирован под диcплей меньше 380 пикселей.";
     color: red;
   }
 }
