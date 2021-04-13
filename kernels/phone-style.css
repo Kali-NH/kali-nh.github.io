@@ -141,13 +141,13 @@ body {
   margin-left: 30px;
 }
 
-label {
+.phone-label {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   display: block;
   width: 50px;
 }
-.card {
+.phone-card {
   position: relative;
   height: 100px;
   width: 50px;
@@ -157,7 +157,7 @@ label {
   transition: all 500ms;
   z-index: 20;
 }
-.card div {
+.phone-card div {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -165,11 +165,11 @@ label {
   backface-visibility: hidden;
   border-radius: 5px;
 }
-.card .back {
+.phone-card .phone-card-back {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-label:hover .card {
+label:hover .phone-card {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
@@ -291,76 +291,62 @@ label:hover .card {
 }
 .kernel-down {
   width: auto;
-}
-.download-button {
-  text-decoration: none;
-  color: #ffffff;
-  text-align: center;
-  display: block;
   border-top: 1px solid rgb(78, 78, 78);
-  width: 100%;
-  padding-top: 10px;
-  margin-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 0;
 }
 .download-button:hover {
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
 
-.button:hover {
-  text-shadow: 0px 0px 5px rgb(255, 255, 255);
-}
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-  transition: opacity 200ms;
-  visibility: hidden;
-  opacity: 0;
-}
-.cancel {
-  position: absolute;
-  width: 100%;
+.download-label {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  width: 100px;
   height: 100%;
-  cursor: default;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-.popup {
-  margin: auto;
-  background-color: rgb(43, 40, 40);
-  margin-top: 200px;
-  padding: 20px;
-  border: 2px solid rgb(78, 78, 78);
-  border-radius: 10px;
-  width: 300px;
-  box-shadow: 0 0 50px rgb(0, 0, 0);
+.kernel-card {
   position: relative;
+  height: 40px;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 700ms;
+  transition: all 700ms;
+  z-index: 20;
 }
-.popup:hover + .name ul {
+.kernel-card div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+.kernel-card .back {
+  border-radius: 0px 0px 0px 15px;
+  color: #fff;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+input {
   display: none;
 }
-.close {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 12px;
-  right: 20px;
-  font-size: 30px;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
+:checked + .kernel-card {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
 }
-.close:hover {
+.front {
+  padding-top: 12px;
+}
+.front:hover {
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
-.popup-content {
-  margin-top: 20px;
+.back {
+  display: flex;
+  justify-content: center;
 }
 .download {
   color: rgb(255, 255, 255);
@@ -369,10 +355,8 @@ label:hover .card {
   display: block;
   border: 1px solid rgb(78, 78, 78);
   border-radius: 10px;
-  padding-top: 10px;
-  margin-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 0;
+  padding: 6px;
+  margin: 4px;
 }
 .download:hover {
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
