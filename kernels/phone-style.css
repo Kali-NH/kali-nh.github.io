@@ -27,9 +27,13 @@ body {
   margin-right: 10px;
   text-decoration: none;
   color: rgb(255, 255, 255);
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 .site-name:hover {
   text-shadow: 0px 0px 4px rgb(255, 255, 255);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
 .site-subname {
   font-size: 17px;
@@ -40,9 +44,13 @@ body {
   text-decoration: none;
   color: rgb(128, 128, 128);
   font-weight: 700;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 .site-subname:hover {
   text-shadow: 0px 0px 4px rgb(128, 128, 128);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
 .navigation {
   display: flex;
@@ -63,10 +71,14 @@ body {
   padding-top: 17px;
   background-position: center center;
   background-size: cover;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 .navigation-link-pda:hover,
 .navigation-link-tg:hover {
   text-shadow: 0px 0px 4px rgb(255, 255, 255);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
 .navigation-link-pda {
   background-image: url(/img/4pdab.jpeg);
@@ -86,10 +98,14 @@ body {
   color: #9e9e9e;
   width: 75px;
   font-size: 15px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 .navigation-link-autor:hover,
 .navigation-link-git:hover {
   text-shadow: 0px 0px 5px rgb(128, 128, 128);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
 .onsite-navigation {
   background-image: -webkit-linear-gradient(top, black, rgb(43, 40, 40));
@@ -204,9 +220,13 @@ label:hover .phone-card {
 }
 .ext-l:hover {
   text-shadow: 0px 0px 4px rgb(255, 255, 255);
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 .ext-l {
   text-decoration: none;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 .ext-e {
   color: rgb(250, 248, 248);
@@ -289,21 +309,79 @@ label:hover .phone-card {
   margin-top: 3px;
   margin-left: 10px;
 }
-.kernel-down {
-  width: auto;
-  border-top: 1px solid rgb(78, 78, 78);
+
+.accordion {
+  width: 100%;
 }
-.download-button:hover {
-  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+.accordion ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.accordion li {
+  margin: 0;
+
+  padding-top: 5px;
+}
+.accordion [type="radio"],
+.accordion [type="checkbox"] {
+  display: none;
+}
+.accordion label {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.accordion ul li label:hover {
+  box-shadow: 0px 0px 5px rgb(255, 255, 255);
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+.accordion [type="checkbox"]:checked ~ label {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  box-shadow: 0px 0px 9px rgb(255, 255, 255);
+  margin-bottom: 10px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+.accordion .content {
+  font-weight: 300;
+  padding: 0 30px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+.vertical ul li {
+  overflow: hidden;
+}
+.vertical ul li label {
+  margin: 5px auto;
+  width: 50px;
+  height: 16px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.5s ease-out;
+}
+.kernel-downimg {
+  height: 10px;
+  width: 30px;
+}
+.vertical ul li .content {
+  height: 0px;
+  border: 0;
+  transition: all 0.5s ease-out;
+}
+.vertical [type="checkbox"]:checked ~ label ~ .content {
+  height: 200px;
 }
 
-.download-label {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  width: 100px;
-  height: 100%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.kernel-down {
+  border-top: 1px solid rgb(78, 78, 78);
+  width: auto;
+}
+.kernel-download-label {
   cursor: pointer;
 }
 .kernel-card {
@@ -323,9 +401,8 @@ label:hover .phone-card {
   text-align: center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 2px;
 }
-.kernel-card .back {
+.kernel-card .kernel-card-back {
   border-radius: 0px 0px 0px 15px;
   color: #fff;
   -webkit-transform: rotateX(180deg);
@@ -338,13 +415,17 @@ input {
   transform: rotateX(180deg);
   -webkit-transform: rotateX(180deg);
 }
-.front {
+.kernel-card-front {
   padding-top: 12px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
-.front:hover {
+.kernel-card-front:hover {
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
-.back {
+.kernel-card-back {
   display: flex;
   justify-content: center;
   background-color: rgb(43, 40, 40);
@@ -358,9 +439,13 @@ input {
   border-radius: 10px;
   padding: 6px;
   margin: 4px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 .download:hover {
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
 .kernel-right {
   margin-left: auto;
@@ -384,9 +469,13 @@ input {
   margin-left: 10px;
   text-decoration: none;
   color: #ffffff;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 .nick:hover {
   text-shadow: 0px 0px 4px rgb(255, 255, 255);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
 .source {
   border: 1px solid rgb(78, 78, 78);
@@ -403,9 +492,13 @@ input {
   text-decoration: none;
   color: #ffffff;
   white-space: pre;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 .source-button:hover {
   text-shadow: 0px 0px 4px rgb(255, 255, 255);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
 .id {
   margin: 0;
@@ -415,6 +508,8 @@ input {
 .id:hover {
   color: black;
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
 @media (max-width: 1000px) {
   .kernel-leftmiddle {
@@ -478,15 +573,15 @@ input {
     margin-top: 15px;
     margin-bottom: 5px;
   }
+  .kernel-card .kernel-card-back {
+    border-radius: 0px 0px 15px 15px;
+  }
   .kernel-right {
     border: none;
     display: flex;
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
-  }
-  .popup {
-    width: 250px;
   }
   .autor {
     margin-top: 0;
