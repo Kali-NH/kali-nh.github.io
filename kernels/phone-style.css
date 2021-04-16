@@ -252,19 +252,24 @@ label:hover .phone-card {
   border-top: none;
   border-radius: 0px 0px 15px 15px;
   padding: 5px;
+  margin-left: 30px;
   width: 100px;
 }
 .kernel {
   display: block;
   width: 100%;
 }
+.kernel-name {
+  margin: 20px 0px 0px 30px;
+  font-weight: 700;
+  font-size: 25px;
+}
+.kernel-left {
+  padding-top: 10px;
+}
 .kernel-leftmiddle {
   display: flex;
   margin-left: 30px;
-}
-.kernel-name {
-  font-weight: 700;
-  font-size: 25px;
 }
 .android-icon {
   height: 17px;
@@ -552,6 +557,9 @@ input {
     display: inline-block;
     margin-right: 5px;
   }
+  .kernel-name {
+    font-size: 20px;
+  }
   .kernel-leftmiddle {
     display: block;
   }
@@ -611,8 +619,7 @@ input {
   }
   .kernel-name {
     text-align: center;
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin: 10px 0px 5px 0px;
   }
   .kernel-leftmiddle {
     margin-left: 0;
@@ -629,12 +636,17 @@ input {
     border-radius: 15px 15px 0px 0px;
   }
   .kernel-right {
+    flex-wrap: wrap;
     border: none;
     border-top: 1px solid rgb(78, 78, 78);
     display: flex;
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  .kernel-right::-webkit-scrollbar {
+    width: 0px;
   }
   .kernel-card-front,
   .kernel-card-back {
