@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet" />
+  <title>NetHunter Kernels</title>
+  <link rel="stylesheet" href="/kernels/phone-style.css" />
+  <link rel="shortcut icon" href="/kali-nh.github.io/img/logo-b.png" type="image/jpg" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-left">
+      <img src="/img/logo-b.png" alt="logo" class="logo" />
+      <a href="https://kali-nh.github.io/" class="site-name">NetHunter</a>
+      <a href="https://kali-nh.github.io/kernels" class="site-subname">Kernels</a>
+    </div>
+    <nav class="navigation">
+      <nav class="tgandpda"><a href="https://t.me/kali_nh" class="navigation-link-tg">Telegram</a>
+        <a href="http://4pda.ru/forum/index.php?showtopic=952937" class="navigation-link-pda">4PDA</a>
+      </nav>
+      <nav class="rsm">
+        <a href="https://t.me/gr_69" class="navigation-link-autor">Author</a>
+        <a href="https://github.com/Kali-NH/Kali-NH.github.io" class="navigation-link-git">GitHub</a>
+      </nav>
+    </nav>
+  </header>
+  <div class="onsite-navigation">
+  </div>
+  <div class="container">
+    <div class="phone-container">
+      <div class="phone">
+        <label class="phone-label">
+          <div class="phone-card">
+            <div class="phone-card-front"><img
+                src="https://s.4pda.to/cNsLLhglIbH5oz0fGg19n7JiwHz1bB69S0K5GrwSHXRMEQGmBPnz0.jpg?_=1536738006" alt=""
+                class="phone-icon"></div>
+            <div class="phone-card-back"><img
+                src="https://s.4pda.to/cNsLLVIhvZS8jGwNcz2QpvfTxo8Iz2KaHT1aZhfIghgj4hBgosPP.jpg?_=1536737992" alt=""
+                class="phone-icon"></div>
+          </div>
+        </label>
+        <div class="phone-info">
+          <ul id="names">
+            <li class="name showing">Xiaomi Mi 8 Pro</li>
+          </ul>
+          <p class="phone-codename">equuleus</p>
+        </div>
+      </div>
+      <div class="phone-links">
+        <a href="https://4pda.ru/devdb/xiaomi_mi8_ee" class="phone-links-link">4PDA</a>
+      </div>
+    </div>
+    <div class="kernel-block">
+      <div class="kernel">
+        <div class="kernel-name">Abadir Kernel</div>
+        <div class="kernel-leftmiddle">
+          <div class="kernel-left">
+            <p class="kernel-version"><img src="/img/kernel.svg" alt="" class="kernel-icon">-</p>
+            <p class="android"><img src="/img/android.svg" alt="" class="android-icon">Pie 9</p>
+          </div>
+          <div class="kernel-middle">
+            <div class="middle">
+              <img src="/img/unknown.svg" alt="unknown" class="unknown-ico">
+              <p class="ti-text">Поддержка внешних WiFi адаптеров</p>
+            </div>
+            <div class="middle">
+              <img src="/img/unknown.svg" alt="unknown" class="unknown-ico">
+              <p class="ti-text">Поддержка HID</p>
+            </div>
+          </div>
+        </div>
+        <div class="kernel-down">
+          <label class="kernel-download-label">
+            <input type="checkbox" />
+            <div class="kernel-card">
+              <div class="kernel-card-front">Скачать</div>
+              <div class="kernel-card-back">
+                <p>17,0 мб</p>
+                <a href="https://github.com/Kali-NH/kernels/raw/master/equuleus0.zip" class="download">GitHub</a>
+                <a href="https://4pda.ru/forum/dl/post/19531390/nh_abadir.zip" class="download">4PDA</a>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="kernel-right">
+        <div class="autor">
+          <img
+            src="https://sun3-13.userapi.com/s/v1/ig2/_5rJ7sehXFdjWjl-k4EfzqblKmaDXOhnE7Sod9zne1oYxnAY3BQlz9-W8cyxPJ102FJpWqbhotkMvoyBG1iH-I3t.jpg?size=200x0&quality=96&crop=1,141,838,838&ava=1"
+            alt="" class="avatar">
+          <a href="https://vk.com/d1mons" class="nick">Дмитрий Смолич</a>
+        </div>
+        <div class="source">
+          <a href="https://4pda.ru/forum/index.php?s=&showtopic=929748&view=findpost&p=95946062" class="source-button">Пост на 4PDA</a>
+        </div>
+        <p class="id">id0</p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var slides = document.querySelectorAll('#names .name');
+      var currentSlide = 0;
+      var slideInterval = setInterval(nextSlide, 3000);
+
+      function nextSlide() {
+        slides[currentSlide].className = 'name';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].className = 'name showing';
+      }
+    </script>
+</body>
+
+</html>
