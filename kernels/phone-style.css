@@ -4,6 +4,17 @@ body {
   margin: auto;
   font-family: "Comfortaa", cursive;
 }
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(78, 78, 78, 0.5);
+}
+body::-webkit-scrollbar-track {
+  background-color: rgba(78, 78, 78, 0.5);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(180, 180, 180, 0.5);
+  border-radius: 5px;
+}
 a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -153,6 +164,13 @@ a {
   padding: 10px;
   box-sizing: border-box;
 }
+.phone-container {
+  display: flex;
+  justify-content: space-between;
+}
+.phone {
+  min-width: 600px;
+}
 .phone-info {
   width: 100%;
   display: block;
@@ -200,45 +218,27 @@ label:hover .phone-card {
   background-size: cover;
   border-radius: 5px;
 }
-#ext::-webkit-scrollbar {
-  width: 5px;
-  background-color: rgb(0, 0, 0);
+.phone-links {
+  width: auto;
+  display: block;
+  padding: 5px;
 }
-#ext::-webkit-scrollbar-track {
-  background-color: #000000;
-  border-radius: 5px;
-}
-#ext::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: rgb(78, 78, 78);
-}
-#ext {
-  overflow-x: hidden;
-  min-width: 60px;
-  list-style-type: none;
-  overflow: auto;
-  height: 100px;
-  padding-left: 0;
-  margin: 0;
-}
-.ext-l:hover {
+.phone-links-link:hover {
   text-shadow: 0px 0px 4px rgb(255, 255, 255);
   -webkit-transition: all 500ms;
   transition: all 500ms;
 }
-.ext-l {
+.phone-links-link {
+  display: block;
   text-decoration: none;
   -webkit-transition: all 500ms;
   transition: all 500ms;
-}
-.ext-e {
-  color: rgb(250, 248, 248);
+  color: rgb(255, 255, 255);
   text-align: center;
-  margin-top: 5px;
+  margin-top: 7px;
+  padding: 3px 7px 1px 7px;
   border: 1px solid rgb(78, 78, 78);
   border-radius: 15px;
-  padding-top: 3px;
-  padding-bottom: 2px;
 }
 .kernel-block {
   display: flex;
@@ -307,8 +307,7 @@ label:hover .phone-card {
   box-shadow: 0px 0px 8px rgb(255, 0, 0);
   border-radius: 100%;
 }
-.wifi-text,
-.hid-text {
+.ti-text {
   margin-top: 3px;
   margin-left: 10px;
 }
@@ -358,13 +357,6 @@ label:hover .phone-card {
   padding: 0 30px;
   -webkit-transition: all 300ms;
   transition: all 300ms;
-}
-.vertical [type="checkbox"]:checked ~ label ~ .content::-webkit-scrollbar,
-.content::-webkit-scrollbar-track,
-.content::-webkit-scrollbar-thumb {
-  -webkit-transition: all 500ms 0.5s;
-  transition: all 500ms 0.5s;
-  background-color: rgba(0, 0, 0, 0);
 }
 .content::-webkit-scrollbar {
   width: 6px;
@@ -453,6 +445,7 @@ input {
   transition: all 300ms;
 }
 .kernel-card-back {
+  overflow: auto;
   display: flex;
   justify-content: center;
   background-color: rgb(43, 40, 40);
@@ -521,6 +514,7 @@ input {
   text-align: center;
 }
 .source-button {
+  font-size: 15px;
   text-decoration: none;
   color: #ffffff;
   white-space: pre;
@@ -544,6 +538,20 @@ input {
   transition: all 300ms;
 }
 @media (max-width: 1000px) {
+  .phone {
+    min-width: 100px;
+  }
+  .phone-container {
+    display: block;
+  }
+  .phone-links {
+    display: flex;
+    margin-top: 10px;
+  }
+  .phone-links-link {
+    display: inline-block;
+    margin-right: 5px;
+  }
   .kernel-leftmiddle {
     display: block;
   }
@@ -565,9 +573,11 @@ input {
   }
 }
 @media (max-width: 750px) {
+  body::-webkit-scrollbar {
+    width: 4px;
+  }
   .header {
     display: block;
-    padding-bottom: 10px;
   }
   .header-left {
     justify-content: center;
@@ -590,8 +600,8 @@ input {
     justify-content: center;
     border-left: none;
   }
-  #ext {
-    display: none;
+  .phone-links {
+    justify-content: center;
   }
   .kernel-block {
     display: block;
@@ -643,8 +653,8 @@ input {
     margin-top: 10px;
   }
   .source {
-    margin: 0px;
-    padding-top: 7px;
+    margin: 3px 0px 0px 0px;
+    padding-top: 6px;
     height: 15px;
   }
   .source-button {
