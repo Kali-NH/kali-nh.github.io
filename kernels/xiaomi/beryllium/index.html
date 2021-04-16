@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet" />
+  <title>NetHunter Kernels</title>
+  <link rel="stylesheet" href="/kernels/phone-style.css" />
+  <link rel="shortcut icon" href="/kali-nh.github.io/img/logo-b.png" type="image/jpg" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-left">
+      <img src="/img/logo-b.png" alt="logo" class="logo" />
+      <a href="https://kali-nh.github.io/" class="site-name">NetHunter</a>
+      <a href="https://kali-nh.github.io/kernels" class="site-subname">Kernels</a>
+    </div>
+    <nav class="navigation">
+      <nav class="tgandpda"><a href="https://t.me/kali_nh" class="navigation-link-tg">Telegram</a>
+        <a href="http://4pda.ru/forum/index.php?showtopic=952937" class="navigation-link-pda">4PDA</a>
+      </nav>
+      <nav class="rsm">
+        <a href="https://t.me/gr_69" class="navigation-link-autor">Author</a>
+        <a href="https://github.com/Kali-NH/Kali-NH.github.io" class="navigation-link-git">GitHub</a>
+      </nav>
+    </nav>
+  </header>
+  <div class="onsite-navigation">
+  </div>
+  <div class="container">
+    <div class="phone-container">
+      <div class="phone">
+        <label class="phone-label">
+          <div class="phone-card">
+            <div class="phone-card-front"><img
+                src="https://s.4pda.to/cNsLL7oofuivwMtBmuMnl3S2CURml73Z3XACr4DNCIax3UWRK4.jpg?_=1536598454" alt=""
+                class="phone-icon"></div>
+            <div class="phone-card-back"><img
+                src="https://s.4pda.to/cNsLL3g6HfhqeCcuE3macSFH8qQJvWVraTiJ5SHXRsz12CcibtI.jpg?_=1536598468" alt=""
+                class="phone-icon"></div>
+          </div>
+        </label>
+        <div class="phone-info">
+          <ul id="names">
+            <li class="name showing">Xiaomi Poco F1</li>
+            <li class="name">Xiaomi Pocophone F1</li>
+          </ul>
+          <p class="phone-codename">beryllium</p>
+        </div>
+      </div>
+      <div class="phone-links">
+        <a href="https://4pda.ru/devdb/pocophone_f1" class="phone-links-link">4PDA</a>
+        <a href="https://forum.xda-developers.com/c/xiaomi-poco-f1.8089/" class="phone-links-link">XDA</a>
+      </div>
+    </div>
+    <div class="kernel-block">
+      <div class="kernel">
+        <div class="kernel-name">Sphinx Kernel 3.6</div>
+        <div class="kernel-leftmiddle">
+          <div class="kernel-left">
+            <p class="kernel-version"><img src="/img/kernel.svg" alt="" class="kernel-icon">-</p>
+            <p class="android"><img src="/img/android.svg" alt="" class="android-icon">Q 10, R 11</p>
+          </div>
+          <div class="kernel-middle">
+            <div class="middle">
+              <img src="/img/yes.svg" alt="yes" class="yes-ico">
+              <p class="ti-text">Поддержка внешних WiFi адаптеров</p>
+            </div>
+            <div class="middle">
+              <img src="/img/unknown.svg" alt="unknown" class="unknown-ico">
+              <p class="ti-text">Поддержка HID</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion vertical">
+          <ul>
+            <li>
+              <input type="checkbox" id="checkbox-1" class="checkbox-accordion" />
+              <label for="checkbox-1"><img src="/img/down.svg" alt="" class="kernel-downimg"></label>
+              <div class="content">
+                <ul>10 kernel is based on LineageOS 17.1 source for beryllium and is compiled with latest sources from LLVM
+                  for Clang 11.<br><br>
+                  Sphinx 10/11 Kernel Features - v3.2+<br>
+                  Compiled with latest Clang 11<br>
+                  Upstreamed to Linux 4.9.261<br>
+                  Merged latest CAF tag<br>
+                  Rebased on Lineage 18.0 sources<br>
+                  Merged Latest Lineage 17.1 commits<br>
+                  WireGuard Support<br>
+                  GPU Underclock to 180 Mhz<br>
+                  CRC Check Disabled<br>
+                  Latest Patches for SafetyNet Flags<br>
+                  Boeffla Wakelock Blocker<br>
+                  AdrenoBoost v2.2 Support<br>
+                  Adreno 630 Nap Mode<br>
+                  Sound Control<br>
+                  Support sdFAT Filesystem v2.1.8<br>
+                  Frandom Random Generator<br>
+                  TTL Target<br>
+                  IP Mangle<br>
+                  Expose FPS interface<br>
+                  Fsync Control<br>
+                  DriveDroid Support<br>
+                  DTS X Eagle Driver<br>
+                  Exposure Adjustment Driver (FlickerFree)<br>
+                  Reduced Latency<br>
+                  Simple Low Memory Killer<br>
+                  Disabled Gentle Fair Sleepers<br>
+                  Atheros 9 Wireless Cards Support<br>
+                  Ralink 27xx / 28xx / 30xx Wireless Cards Support<br>
+                  Kcal Advanced Color Control<br>
+                  K-Lapse v5.0<br>
+                  Vibration Control<br>
+                  USB Fast Charge up to 900 mAh<br>
+                  LZ4 Compression Algorithm by default<br>
+                  Backlight Minimum Brightness Control<br>
+                  Power Efficient Workqueues<br>
+                  HID Patch for 4.9 Kernels<br>
+                  mac80211 Injection (Kali Nethunter Support)<br>
+                  I/O Schedulers: Noop, Deadline, Cfq, tripandroid, Anxiety, bfq<br>
+                  TCP Congestion Algorithms : cdg, westwood, bbr, sociopath<br>
+                  Pre-Configured Flash and Forget<br>
+                  Zipped up with latest AnyKernel3<br><br>
+                  <a href="https://github.com/milouk/Sphinx-Beryllium">Source Code</a>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="kernel-down">
+          <label class="kernel-download-label">
+            <input type="checkbox" />
+            <div class="kernel-card">
+              <div class="kernel-card-front">Скачать</div>
+              <div class="kernel-card-back">
+                <p>16,2 мб</p>
+                <a href="https://github.com/Kali-NH/kernels/raw/master/beryllium1.zip" class="download">GitHub</a>
+                <a href="https://androidfilehost.com/?fid=2188818919693754613" class="download">androidfilehost</a>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="kernel-right">
+        <div class="autor">
+          <img src="https://forum.xda-developers.com/data/avatars/s/5533/5533673.jpg?1600603772" alt="" class="avatar">
+          <a href="https://forum.xda-developers.com/m/milouk.5533673/" class="nick">milouk</a>
+        </div>
+        <div class="source">
+          <a href="https://forum.xda-developers.com/t/kernel-sphinx-kernel-10-11-4-9-261-clang-11-13-03-2021-v3-6.3861911/"
+            class="source-button">Пост на XDA</a>
+        </div>
+        <p class="id">id1</p>
+      </div>
+    </div>
+    <div class="kernel-block">
+      <div class="kernel">
+        <div class="kernel-name">Sphinx Kernel 3.1</div>
+        <div class="kernel-leftmiddle">
+          <div class="kernel-left">
+            <p class="kernel-version"><img src="/img/kernel.svg" alt="" class="kernel-icon">-</p>
+            <p class="android"><img src="/img/android.svg" alt="" class="android-icon">Pie 9</p>
+          </div>
+          <div class="kernel-middle">
+            <div class="middle">
+              <img src="/img/yes.svg" alt="yes" class="yes-ico">
+              <p class="ti-text">Поддержка внешних WiFi адаптеров</p>
+            </div>
+            <div class="middle">
+              <img src="/img/unknown.svg" alt="unknown" class="unknown-ico">
+              <p class="ti-text">Поддержка HID</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion vertical">
+          <ul>
+            <li>
+              <input type="checkbox" id="checkbox-0" class="checkbox-accordion" />
+              <label for="checkbox-0"><img src="/img/down.svg" alt="" class="kernel-downimg"></label>
+              <div class="content">
+                <ul>Pie kernel is based on LineageOS 16.0 sources for beryllium and is compiled
+                with SdClang which is Qualcomm's LLVM Compiler for extra performance. [EOL] - Final Version is 3.1<br><br>
+                Sphinx Pie Kernel Features<br>
+                Compiled with Dragon Toolchain based on Clang 9.0.0 with GCC 10 and optimized for SnapDragon 845<br>
+                Upstreamed to 4.9.194<br>
+                Merged CAF Tag LA.UM.7.3.r1-07900-sdm845.0<br>
+                Merged Latest Lineage 16.0 commits<br>
+                Makefile Optimizations<br>
+                Novatech 9.6.20<br>
+                WireGuard Support<br>
+                Dynamic Stune Boost v3<br>
+                GPU Underclock to 180 Mhz<br>
+                CRC Check Disabled<br>
+                Pass SafetyNet without Magisk / Root<br>
+                Boeffla Wakelock Blocker<br>
+                AdrenoBoost v2.2 Support<br>
+                Adreno 630 Nap Mode<br>
+                Pixel 3 Energy Model<br>
+                Hight Brightness Mode Support<br>
+                Sound Control<br>
+                IR Camera for MIUI based Roms<br>
+                Support sdFAT Filesystem v2.1.8<br>
+                Support exFAT Filesystem<br>
+                Support F2FS File System<br>
+                Support NTFS File System<br>
+                Frandom Random Generator<br>
+                TTL Target<br>
+                IP Mangle<br>
+                Fsync Control<br>
+                DriveDroid Support<br>
+                DTS X Eagle Driver<br>
+                Exposure Adjustment Driver (FlickerFree)<br>
+                Reduced Latency<br>
+                Config HZ -> 300<br>
+                Disabled Gentle Fair Sleepers<br>
+                Atheros 9 Wireless Cards Support<br>
+                Ralink 27xx / 28xx / 30xx Wireless Cards Support<br>
+                Kcal Advanced Color Control<br>
+                K-Lapse v5.0<br>
+                Vibration Control<br>
+                LED Notification Control<br>
+                USB Fast Charge up to 900 mAh<br>
+                LZ4 Compression Algorithm by default<br>
+                Backlight Minimum Brightness Control<br>
+                Power Efficient Workqueues<br>
+                mac80211 Injection (Kali Nethunter Support)<br>
+                I/O Schedulers: Zen v2, Maple, Fiops, Sio, Noop, Deadline, Cfq, tripandroid, Anxiety, bfq<br>
+                TCP Congestion Algorithms : cdg, westwood, bbr, sociopath<br>
+                Pre-Configured Flash and Forget<br>
+                Zipped up with AnyKernel2<br><br>
+                <a href="https://github.com/milouk/Sphinx-Beryllium">Source Code</a>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="kernel-down">
+          <label class="kernel-download-label">
+            <input type="checkbox" />
+            <div class="kernel-card">
+              <div class="kernel-card-front">Скачать</div>
+              <div class="kernel-card-back">
+                <p>18,2 мб</p>
+                <a href="https://github.com/Kali-NH/kernels/raw/master/beryllium0.zip" class="download">GitHub</a>
+                <a href="https://4pda.ru/forum/dl/post/22730195/Sphinx-v3.1.zip" class="download">4PDA</a>
+                <a href="https://www.androidfilehost.com/?fid=1899786940962594232" class="download">androidfilehost</a>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="kernel-right">
+        <div class="autor">
+          <img
+            src="https://forum.xda-developers.com/data/avatars/s/5533/5533673.jpg?1600603772"
+            alt="" class="avatar">
+          <a href="https://forum.xda-developers.com/m/milouk.5533673/" class="nick">milouk</a>
+        </div>
+        <div class="source">
+          <a href="https://forum.xda-developers.com/t/kernel-sphinx-kernel-10-11-4-9-261-clang-11-13-03-2021-v3-6.3861911/" class="source-button">Пост на XDA</a>
+        </div>
+        <div class="source">
+          <a href="https://4pda.ru/forum/index.php?s=&showtopic=952937&view=findpost&p=88006115" class="source-button">Пост на 4PDA</a>
+        </div>
+        <p class="id">id0</p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var slides = document.querySelectorAll('#names .name');
+      var currentSlide = 0;
+      var slideInterval = setInterval(nextSlide, 3000);
+
+      function nextSlide() {
+        slides[currentSlide].className = 'name';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].className = 'name showing';
+      }
+    </script>
+</body>
+
+</html>
