@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet" />
+  <title>NetHunter Kernels</title>
+  <link rel="stylesheet" href="/kernels/phone-style.css" />
+  <link rel="shortcut icon" href="/kali-nh.github.io/img/logo-b.png" type="image/jpg" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-left">
+      <img src="/img/logo-b.png" alt="logo" class="logo" />
+      <a href="https://kali-nh.github.io/" class="site-name">NetHunter</a>
+      <a href="https://kali-nh.github.io/kernels" class="site-subname">Kernels</a>
+    </div>
+    <nav class="navigation">
+      <nav class="tgandpda"><a href="https://t.me/kali_nh" class="navigation-link-tg">Telegram</a>
+        <a href="http://4pda.ru/forum/index.php?showtopic=952937" class="navigation-link-pda">4PDA</a>
+      </nav>
+      <nav class="rsm">
+        <a href="https://t.me/gr_69" class="navigation-link-autor">Author</a>
+        <a href="https://github.com/Kali-NH/Kali-NH.github.io" class="navigation-link-git">GitHub</a>
+      </nav>
+    </nav>
+  </header>
+  <div class="onsite-navigation">
+  </div>
+  <div class="container">
+    <div class="phone-container">
+      <div class="phone">
+        <label class="phone-label">
+          <div class="phone-card">
+            <div class="phone-card-front"><img
+                src="https://s.4pda.to/cNsLLJQsBbz2Ksma6ikHLiq3xVz2OxdERD4RkqvQz1fl4ZNDbAQtI.jpg?_=0" alt=""
+                class="phone-icon"></div>
+            <div class="phone-card-back"><img
+                src="https://s.4pda.to/cNsLLVogT6BLOLP8MJz1frOKSesJSIUJP6UdZT07cNejCtiTUTp.jpg?_=1448365002" alt=""
+                class="phone-icon"></div>
+          </div>
+        </label>
+        <div class="phone-info">
+          <ul id="names">
+            <li class="name showing">ZTE Axon Mini</li>
+            <li class="name">ZTE Axon Mini B2015</li>
+            <li class="name">ZTE Axon Mini B2016</li>
+          </ul>
+          <p class="phone-codename"><img src="/img/unknown.svg" alt="unknown" class="unknown-ico">  axonmini</p>
+        </div>
+      </div>
+      <div class="phone-links">
+        <a href="https://4pda.ru/devdb/zte_axon_mini" class="phone-links-link">4PDA</a>
+      </div>
+    </div>
+    <div class="kernel-block">
+      <div class="kernel">
+        <div class="pack">Сборка</div>
+        <div class="kernel-name">Kali Nethunter</div>
+        <div class="kernel-leftmiddle">
+          <div class="kernel-left">
+            <p class="kernel-version"><img src="/img/kernel.svg" alt="" class="kernel-icon">3.10.49</p>
+            <p class="android"><img src="/img/android.svg" alt="" class="android-icon">Lollipop 5, Mifavor v3.2</p>
+          </div>
+          <div class="kernel-middle">
+            <div class="middle">
+              <img src="/img/unknown.svg" alt="unknown" class="unknown-ico">
+              <p class="ti-text">Поддержка внешних WiFi адаптеров</p>
+            </div>
+            <div class="middle">
+              <img src="/img/unknown.svg" alt="unknown" class="unknown-ico">
+              <p class="ti-text">Поддержка HID</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion vertical">
+          <ul>
+            <li>
+              <input type="checkbox" id="checkbox-0" class="checkbox-accordion" />
+              <label for="checkbox-0"><img src="/img/down.svg" alt="" class="kernel-downimg"></label>
+              <div class="content">
+                <ul>
+                  Установка только через TWRP на стоковую (офф. прошивку) Android 5.x.x Lollipop MiFavor v3.2. <br>
+                  Если установлен SuperSU, удаляйте его через само приложение SuperSU перед установкой - обязательная перезагрузка, а
+                  потом уже загрузка в TWRP для установки NetHunter. Это важно. В архиве NetHunter уже есть SperSU. <br><br>
+                  По ссылке несколько архивов для установки:<br>
+                  • архив с полным набором - nethunter-axonmini-lollipop-nobrand-kalifs-full-v3.15.4-170726.zip;<br>
+                  • архив с минимально необходимым софтом - nethunter-axonmini-lollipop-nobrand-kalifs-minimal-v3.15.4-170726.zip;<br>
+                  • архив только с ядром и модулями - kernel-nethunter-axonmini-lollipop-v3.15.4-170726.zip;<br>
+                  • архив для удаления - uninstaller-nethunter-v3.15.4-170726.zip (не уверен что он работает как надо. Самый верный способ
+                  вернутся обратно - это восстановить бэкап из TWRP)<br><br>
+                  Исходники: <br>
+                  <a href="https://github.com/smlinux/android_kernel_zte_axonmini/tree/nethunter-lollipop">Ядро</a><br>
+                  <a href="https://github.com/smlinux/nethunter-devices">Дерево устройств</a>
+               </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="kernel-down">
+          <label class="kernel-download-label">
+            <input type="checkbox" />
+            <div class="kernel-card">
+              <div class="kernel-card-front">Скачать</div>
+              <div class="kernel-card-back">
+                <p>~995 мб</p>
+                <a href="https://drive.google.com/drive/folders/0B-O-RZew2XL3b2JJQ3NIb01jTnc" class="download">GDrive</a>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="kernel-right">
+        <div class="autor">
+          <img
+            src="https://s.4pda.to/cNsLKTd0VwXrhz1mko8Y9gIvGh6thXxWHimBnimk02LdelLW.png"
+            alt="" class="avatar">
+          <a href="https://4pda.ru/forum/index.php?showuser=5609750" class="nick">smlinux</a>
+        </div>
+        <div class="source">
+          <a href="https://4pda.ru/forum/index.php?s=&showtopic=686575&view=findpost&p=63549172" class="source-button">Пост на 4PDA</a>
+        </div>
+        <p class="id">id0</p>
+      </div>
+    </div>
+    <div class="kernel-block">
+      <div class="kernel">
+        <div class="kernel-name">Kali Nethunter Kernel</div>
+        <div class="kernel-leftmiddle">
+          <div class="kernel-left">
+            <p class="kernel-version"><img src="/img/kernel.svg" alt="" class="kernel-icon">3.15.4</p>
+            <p class="android"><img src="/img/android.svg" alt="" class="android-icon">Lollipop 5, Mifavor v3.2</p>
+          </div>
+          <div class="kernel-middle">
+            <div class="middle">
+              <img src="/img/unknown.svg" alt="unknown" class="unknown-ico">
+              <p class="ti-text">Поддержка внешних WiFi адаптеров</p>
+            </div>
+            <div class="middle">
+              <img src="/img/unknown.svg" alt="unknown" class="unknown-ico">
+              <p class="ti-text">Поддержка HID</p>
+            </div>
+          </div>
+        </div>
+        <div class="kernel-down">
+          <label class="kernel-download-label">
+            <input type="checkbox" />
+            <div class="kernel-card">
+              <div class="kernel-card-front">Скачать</div>
+              <div class="kernel-card-back">
+                <p>12,6 мб</p>
+                <a href="https://github.com/Kali-NH/kernels/raw/master/axonmini0.zip" class="download">GitHub</a>
+                <a href="https://drive.google.com/drive/folders/0B-O-RZew2XL3MDZwbDd5ZS1vSDg"
+                  class="download">GDrive</a>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="kernel-right">
+        <div class="autor">
+          <img src="https://s.4pda.to/cNsLKTd0VwXrhz1mko8Y9gIvGh6thXxWHimBnimk02LdelLW.png" alt="" class="avatar">
+          <a href="https://4pda.ru/forum/index.php?showuser=5609750" class="nick">smlinux</a>
+        </div>
+        <div class="source">
+          <a href="https://4pda.ru/forum/index.php?s=&showtopic=686575&view=findpost&p=63549172" class="source-button">Пост на 4PDA</a>
+        </div>
+        <p class="id">id0</p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var slides = document.querySelectorAll('#names .name');
+      var currentSlide = 0;
+      var slideInterval = setInterval(nextSlide, 3000);
+
+      function nextSlide() {
+        slides[currentSlide].className = 'name';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].className = 'name showing';
+      }
+    </script>
+</body>
+
+</html>
