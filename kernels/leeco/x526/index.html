@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet" />
+  <title>NetHunter Kernels</title>
+  <link rel="stylesheet" href="/kernels/phone-style.css" />
+  <link rel="shortcut icon" href="/kali-nh.github.io/img/logo-b.png" type="image/jpg" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-left">
+      <img src="/img/logo-b.png" alt="logo" class="logo" />
+      <a href="https://kali-nh.github.io/" class="site-name">NetHunter</a>
+      <a href="https://kali-nh.github.io/kernels" class="site-subname">Kernels</a>
+    </div>
+    <nav class="navigation">
+      <nav class="tgandpda"><a href="https://t.me/kali_nh" class="navigation-link-tg">Telegram</a>
+        <a href="http://4pda.ru/forum/index.php?showtopic=952937" class="navigation-link-pda">4PDA</a>
+      </nav>
+      <nav class="rsm">
+        <a href="https://t.me/gr_69" class="navigation-link-autor">Author</a>
+        <a href="https://github.com/Kali-NH/Kali-NH.github.io" class="navigation-link-git">GitHub</a>
+      </nav>
+    </nav>
+  </header>
+  <div class="onsite-navigation">
+  </div>
+  <div class="container">
+    <h2>Пожалуйста, не используйте эту страницу, она ещё не завершена.</h3>
+    <div class="phone-container">
+      <div class="phone">
+        <label class="phone-label">
+          <div class="phone-card">
+            <div class="phone-card-front"><img
+                src="https://s.4pda.to/cNsLLhgkKOSXiyoZqo7upGIZCItJsYJz0prvmJRTVuWvEobAw7A.jpg?_=0" alt=""
+                class="phone-icon"></div>
+            <div class="phone-card-back"><img
+                src="https://s.4pda.to/cNsLLBgFCPJvJ5H5h2VV9QMZyZifz2L7z2syEanEyi63l9UB1egd.jpg?_=1477407867" alt=""
+                class="phone-icon"></div>
+          </div>
+        </label>
+        <div class="phone-info">
+          <ul id="names">
+            <li class="name showing">LeEco Le 2</li>
+            <li class="name">LeEco Le S3</li>
+          </ul>
+          <p class="phone-codename">X520/X526/X527/X522</p>
+        </div>
+      </div>
+      <div class="phone-links">
+        <a href="https://4pda.ru/devdb/leeco_le_2:le_2x520" class="phone-links-link">Cool1 4PDA</a>
+        <a href="https://4pda.ru/devdb/leeco_le_s3" class="phone-links-link">Le S3 4PDA</a>
+      </div>
+    </div>
+    <div class="kernel-block">
+      <div class="kernel">
+        <div class="kernel-name">Kali Nethunter Kernel</div>
+        <div class="kernel-leftmiddle">
+          <div class="kernel-left">
+            <p class="kernel-version"><img src="/img/kernel.svg" alt="" class="kernel-icon">-</p>
+            <p class="android"><img src="/img/android.svg" alt="" class="android-icon">Marshmallow 6</p>
+          </div>
+          <div class="kernel-middle">
+            <div class="middle">
+              <img src="/img/yes.svg" alt="yes" class="yes-ico">
+              <p class="ti-text">Поддержка внешних WiFi адаптеров</p>
+            </div>
+            <div class="middle">
+              <img src="/img/yes.svg" alt="yes" class="yes-ico">
+              <p class="ti-text">Поддержка HID</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion vertical">
+          <ul>
+            <li>
+              <input type="checkbox" id="checkbox-0" class="checkbox-accordion" />
+              <label for="checkbox-0"><img src="/img/down.svg" alt="" class="kernel-downimg"></label>
+              <div class="content">
+                <ul>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="kernel-down">
+          <label class="kernel-download-label">
+            <input type="checkbox" />
+            <div class="kernel-card">
+              <div class="kernel-card-front">Скачать</div>
+              <div class="kernel-card-back">
+                <p>31,3 мб</p>
+                <a href="https://4pda.ru/forum/dl/post/20114641/kernel-nethunter-20200622_220403-cool_c1-marshmallow.zip" class="download">4PDA</a>
+                <a href="https://disk.yandex.ru/d/rzy3Ksq0GTaWuQ" class="download">Я.Диск</a>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="kernel-right">
+        <div class="autor">
+          <img src="https://s.4pda.to/cNsLHQz0oWZ2xH7Mz1Sn5r4DHSiwz1rkz0YBoPWBvhz1EGOxdAciV.jpg" alt="" class="avatar">
+          <a href="https://4pda.ru/forum/index.php?showuser=6428930" class="nick">kwinc</a>
+        </div>
+        <div class="source">
+          <a href="https://4pda.ru/forum/index.php?s=&showtopic=911910&view=findpost&p=94829774" class="source-button">Пост на 4PDA</a>
+        </div>
+        <p class="id">id0</p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var slides = document.querySelectorAll('#names .name');
+      var currentSlide = 0;
+      var slideInterval = setInterval(nextSlide, 3000);
+
+      function nextSlide() {
+        slides[currentSlide].className = 'name';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].className = 'name showing';
+      }
+    </script>
+</body>
+
+</html>

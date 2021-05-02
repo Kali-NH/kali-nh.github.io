@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet" />
+  <title>NetHunter Kernels</title>
+  <link rel="stylesheet" href="/kernels/phone-style.css" />
+  <link rel="shortcut icon" href="/kali-nh.github.io/img/logo-b.png" type="image/jpg" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-left">
+      <img src="/img/logo-b.png" alt="logo" class="logo" />
+      <a href="https://kali-nh.github.io/" class="site-name">NetHunter</a>
+      <a href="https://kali-nh.github.io/kernels" class="site-subname">Kernels</a>
+    </div>
+    <nav class="navigation">
+      <nav class="tgandpda"><a href="https://t.me/kali_nh" class="navigation-link-tg">Telegram</a>
+        <a href="http://4pda.ru/forum/index.php?showtopic=952937" class="navigation-link-pda">4PDA</a>
+      </nav>
+      <nav class="rsm">
+        <a href="https://t.me/gr_69" class="navigation-link-autor">Author</a>
+        <a href="https://github.com/Kali-NH/Kali-NH.github.io" class="navigation-link-git">GitHub</a>
+      </nav>
+    </nav>
+  </header>
+  <div class="onsite-navigation">
+  </div>
+  <div class="container">
+    <div class="phone-container">
+      <div class="phone">
+        <label class="phone-label">
+          <div class="phone-card">
+            <div class="phone-card-front"><img
+                src="https://s.4pda.to/cNsLLJANSRWNmtCH9Vz1W44WUvgxfvCGlXtUCLK5ZUz2f6cdlZug.jpg?_=0" alt=""
+                class="phone-icon"></div>
+            <div class="phone-card-back"><img
+                src="https://s.4pda.to/cNsLLVohVVwkMGUCy65wtFlLybmvnOIgeWwMiRz0FGaJFnZ52ha.jpg?_=0" alt=""
+                class="phone-icon"></div>
+          </div>
+        </label>
+        <div class="phone-info">
+          <ul id="names">
+            <li class="name showing">LeEco Cool1</li>
+            <li class="name">LeEco Cool1 Dual</li>
+          </ul>
+          <p class="phone-codename">C106/C103/R116</p>
+        </div>
+      </div>
+      <div class="phone-links">
+        <a href="https://4pda.ru/devdb/leeco_cool1" class="phone-links-link">4PDA</a>
+      </div>
+    </div>
+    <div class="kernel-block">
+      <div class="kernel">
+        <div class="pack">Сборка</div>
+        <div class="kernel-name">Kali Nethunter</div>
+        <div class="kernel-leftmiddle">
+          <div class="kernel-left">
+            <p class="kernel-version"><img src="/img/kernel.svg" alt="" class="kernel-icon">-</p>
+            <p class="android"><img src="/img/android.svg" alt="" class="android-icon">Pie 9</p>
+          </div>
+          <div class="kernel-middle">
+            <div class="middle">
+              <img src="/img/yes.svg" alt="yes" class="yes-ico">
+              <p class="ti-text">Поддержка внешних WiFi адаптеров</p>
+            </div>
+            <div class="middle">
+              <img src="/img/yes.svg" alt="yes" class="yes-ico">
+              <p class="ti-text">Поддержка HID</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion vertical">
+          <ul>
+            <li>
+              <input type="checkbox" id="checkbox-3" class="checkbox-accordion" />
+              <label for="checkbox-3"><img src="/img/down.svg" alt="" class="kernel-downimg"></label>
+              <div class="content">
+                <ul>
+                  <b>Работает:</b><br>
+                  HID <br>
+                  USB Wi-Fi адаптеры: <br>
+                  • Atheros ATH9KHTC (AR9271, AR7010) <br>
+                  • Ralink RT3070 ревизии AL1A <br>
+                  • Realtek RTL8192CU<br>
+                  USB Bluetooth адаптеры (не проверял, но должно работать) <br><br>
+                  В сборках minimal и full уже вшито ядро. То есть устанавливается сразу nethunter и ядро для него. <br>
+                  Новой бут-анимации с обоями не ждите, вырезал, ибо бесит. <br>
+                  Приложения (Nethunter, терминал...) должны появиться сами! Не нужно будет их вытаскивать из архива и устанавливать, как было в generic на девятках. <br><br>
+                  <b>Установка:</b><br>
+                  Если не умеете "воскрешать" кирпич, то лучше не надо...<br>
+                  1. Бекап boot<br>
+                  2. C <a href="https://drive.google.com/file/d/1Bf0JCUQcb1TG6FE8NMPYHlFFBZuWE0Ey/view">рекавери от Cuoco92</a> всё точно устанавливается и работает. Возможно сработает и с другим рекавери, не проверял. <br>
+                  3. Скачать либо full либо minimal, чего душа пожелает<br>
+                  4. В TWRP прошить то, что скачали в пункте 3 <br>
+                  5. После перезагружаемся в систему и идем смотреть версию ядра. Если там 3.10.108-lineageos-nethunter, то всё сделано правильно.<br>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="kernel-down">
+          <label class="kernel-download-label">
+            <input type="checkbox" />
+            <div class="kernel-card">
+              <div class="kernel-card-front">Скачать Minimal сборку</div>
+              <div class="kernel-card-back">
+                <p>420 мб</p>
+                <a href="https://disk.yandex.ru/d/S62pwXL9B-rrKA" class="download">Я.Диск</a>
+              </div>
+            </div>
+          </label><label class="kernel-download-label">
+            <input type="checkbox" />
+            <div class="kernel-card">
+              <div class="kernel-card-front">Скачать Full сборку</div>
+              <div class="kernel-card-back">
+                <p>1,2 гб</p>
+                <a href="https://disk.yandex.ru/d/p2Nvksp3_Rsogg" class="download">Я.Диск</a>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="kernel-right">
+        <div class="autor">
+          <img src="https://s.4pda.to/cNsLHQz0oWZ2xH7Mz1Sn5r4DHSiwz1rkz0YBoPWBvhz1EGOxdAciV.jpg" alt="" class="avatar">
+          <a href="https://4pda.ru/forum/index.php?showuser=6428930" class="nick">kwinc</a>
+        </div>
+        <div class="source">
+          <a href="https://4pda.ru/forum/index.php?s=&showtopic=911910&view=findpost&p=94829774" class="source-button">Пост на 4PDA</a>
+        </div>
+        <p class="id">id3</p>
+      </div>
+    </div>
+    <div class="kernel-block">
+      <div class="kernel">
+        <div class="kernel-name">Kali Nethunter Kernel</div>
+        <div class="kernel-leftmiddle">
+          <div class="kernel-left">
+            <p class="kernel-version"><img src="/img/kernel.svg" alt="" class="kernel-icon">-</p>
+            <p class="android"><img src="/img/android.svg" alt="" class="android-icon">Pie 9</p>
+          </div>
+          <div class="kernel-middle">
+            <div class="middle">
+              <img src="/img/yes.svg" alt="yes" class="yes-ico">
+              <p class="ti-text">Поддержка внешних WiFi адаптеров</p>
+            </div>
+            <div class="middle">
+              <img src="/img/yes.svg" alt="yes" class="yes-ico">
+              <p class="ti-text">Поддержка HID</p>
+            </div>
+          </div>
+        </div>
+        <div class="kernel-down">
+          <label class="kernel-download-label">
+            <input type="checkbox" />
+            <div class="kernel-card">
+              <div class="kernel-card-front">Скачать</div>
+              <div class="kernel-card-back">
+                <p>12,9 мб</p>
+                <a href="https://github.com/Kali-NH/kernels/raw/master/c1061.zip" class="download">GitHub</a>
+                <a href="https://4pda.ru/forum/dl/post/20114642/kernel-nethunter-20200612_181917-cool_c1-pie.zip" class="download">4PDA</a>
+                <a href="https://disk.yandex.ru/d/fhwLNXT7lqvkeQ" class="download">Я.Диск</a>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="kernel-right">
+        <div class="autor">
+          <img src="https://s.4pda.to/cNsLHQz0oWZ2xH7Mz1Sn5r4DHSiwz1rkz0YBoPWBvhz1EGOxdAciV.jpg" alt="" class="avatar">
+          <a href="https://4pda.ru/forum/index.php?showuser=6428930" class="nick">kwinc</a>
+        </div>
+        <div class="source">
+          <a href="https://4pda.ru/forum/index.php?s=&showtopic=911910&view=findpost&p=94829774" class="source-button">Пост на 4PDA</a>
+        </div>
+        <p class="id">id2</p>
+      </div>
+    </div>
+    <div class="kernel-block">
+      <div class="kernel">
+        <div class="pack">Сборка</div>
+        <div class="kernel-name">Kali Nethunter</div>
+        <div class="kernel-leftmiddle">
+          <div class="kernel-left">
+            <p class="kernel-version"><img src="/img/kernel.svg" alt="" class="kernel-icon">-</p>
+            <p class="android"><img src="/img/android.svg" alt="" class="android-icon">Marshmallow 6</p>
+          </div>
+          <div class="kernel-middle">
+            <div class="middle">
+              <img src="/img/yes.svg" alt="yes" class="yes-ico">
+              <p class="ti-text">Поддержка внешних WiFi адаптеров</p>
+            </div>
+            <div class="middle">
+              <img src="/img/yes.svg" alt="yes" class="yes-ico">
+              <p class="ti-text">Поддержка HID</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion vertical">
+          <ul>
+            <li>
+              <input type="checkbox" id="checkbox-1" class="checkbox-accordion" />
+              <label for="checkbox-1"><img src="/img/down.svg" alt="" class="kernel-downimg"></label>
+              <div class="content">
+                <ul>
+                  <b>Работает:</b><br>
+                  HID <br>
+                  USB Wi-Fi адаптеры: <br>
+                  • Atheros ATH9KHTC (AR9271, AR7010) <br>
+                  • Ralink RT3070 ревизии AL1A <br>
+                  • Realtek RTL8192CU<br>
+                  USB Bluetooth адаптеры (не проверял, но должно работать) <br><br>
+                  В сборках minimal и full уже вшито ядро. То есть устанавливается сразу nethunter и ядро для него. <br>
+                  Новой бут-анимации с обоями не ждите, вырезал, ибо бесит. <br>
+                  Приложения (Nethunter, терминал...) должны появиться сами! Не нужно будет их вытаскивать из архива и устанавливать, как было в generic на девятках. <br><br>
+                  <b>Установка:</b><br>
+                  Если не умеете "воскрешать" кирпич, то лучше не надо...<br>
+                  Тестировалось на EUI 18S, следовательно инструкция для неё.<br>
+                  Что будет на других версиях 6 андроида я не знаю.<br>
+                  1. Данные должны сохранится, но на всякий случай делаем бекап важных файлов.<br>
+                  2. Cтавим <a href="https://drive.google.com/file/d/1Bf0JCUQcb1TG6FE8NMPYHlFFBZuWE0Ey/view">рекавери от Cuoco92</a><br>
+                  3. Прошиваем <a href="">это</a><br>
+                  4. Бекап system и boot<br>
+                  5. Скачать либо full либо minimal сборку для 6 андроида, прошить<br>
+                  6. Ставим рут (Советую так же скачать у меня именно <a href="https://disk.yandex.ru/d/XskWH_cvyr-VbQ">эту версию magisk</a>. С другой у меня при тестах отваливался usb)<br>
+                  7. Перезагружаемся в систему<br>
+                  • Если телефон загрузился, встроенный wifi работает и в версии ядра красуется 3.10.84-nethunter, то можно праздновать. Серьезно. Прям праздновать. Такое редко случается.<br>
+                  • Если же телефон виснет на сплеше (надпись coolpad при загрузке), то держим кнопку питание и громкость вверх до начала загрузки в рекавери и восстанавливаем бекап, который создали в пункте 4<br>
+                  • Если установили мой magisk, то знайте, что он отказывается запускаться при включенном wifi или/и передаче данных.<br>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="kernel-down">
+          <label class="kernel-download-label">
+            <input type="checkbox" />
+            <div class="kernel-card">
+              <div class="kernel-card-front">Скачать Minimal сборку</div>
+              <div class="kernel-card-back">
+                <p>438,3 мб</p>
+                <a href="https://disk.yandex.ru/d/2jpj4CYuJVC18Q" class="download">Я.Диск</a>
+              </div>
+            </div>
+          </label><label class="kernel-download-label">
+            <input type="checkbox" />
+            <div class="kernel-card">
+              <div class="kernel-card-front">Скачать Full сборку</div>
+              <div class="kernel-card-back">
+                <p>1,22 гб</p>
+                <a href="https://disk.yandex.ru/d/NIacg8JLQyaq-g" class="download">Я.Диск</a>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="kernel-right">
+        <div class="autor">
+          <img src="https://s.4pda.to/cNsLHQz0oWZ2xH7Mz1Sn5r4DHSiwz1rkz0YBoPWBvhz1EGOxdAciV.jpg" alt="" class="avatar">
+          <a href="https://4pda.ru/forum/index.php?showuser=6428930" class="nick">kwinc</a>
+        </div>
+        <div class="source">
+          <a href="https://4pda.ru/forum/index.php?s=&showtopic=911910&view=findpost&p=94829774" class="source-button">Пост на 4PDA</a>
+        </div>
+        <p class="id">id1</p>
+      </div>
+    </div>
+    <div class="kernel-block">
+      <div class="kernel">
+        <div class="kernel-name">Kali Nethunter Kernel</div>
+        <div class="kernel-leftmiddle">
+          <div class="kernel-left">
+            <p class="kernel-version"><img src="/img/kernel.svg" alt="" class="kernel-icon">-</p>
+            <p class="android"><img src="/img/android.svg" alt="" class="android-icon">Marshmallow 6 (EUI 18S)</p>
+          </div>
+          <div class="kernel-middle">
+            <div class="middle">
+              <img src="/img/yes.svg" alt="yes" class="yes-ico">
+              <p class="ti-text">Поддержка внешних WiFi адаптеров</p>
+            </div>
+            <div class="middle">
+              <img src="/img/yes.svg" alt="yes" class="yes-ico">
+              <p class="ti-text">Поддержка HID</p>
+            </div>
+          </div>
+        </div>
+        <div class="kernel-down">
+          <label class="kernel-download-label">
+            <input type="checkbox" />
+            <div class="kernel-card">
+              <div class="kernel-card-front">Скачать</div>
+              <div class="kernel-card-back">
+                <p>31,3 мб</p>
+                <a href="https://github.com/Kali-NH/kernels/raw/master/c1060.zip" class="download">GitHub</a>
+                <a href="https://4pda.ru/forum/dl/post/20114641/kernel-nethunter-20200622_220403-cool_c1-marshmallow.zip" class="download">4PDA</a>
+                <a href="https://disk.yandex.ru/d/rzy3Ksq0GTaWuQ" class="download">Я.Диск</a>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="kernel-right">
+        <div class="autor">
+          <img src="https://s.4pda.to/cNsLHQz0oWZ2xH7Mz1Sn5r4DHSiwz1rkz0YBoPWBvhz1EGOxdAciV.jpg" alt="" class="avatar">
+          <a href="https://4pda.ru/forum/index.php?showuser=6428930" class="nick">kwinc</a>
+        </div>
+        <div class="source">
+          <a href="https://4pda.ru/forum/index.php?s=&showtopic=911910&view=findpost&p=94829774" class="source-button">Пост на 4PDA</a>
+        </div>
+        <p class="id">id0</p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var slides = document.querySelectorAll('#names .name');
+      var currentSlide = 0;
+      var slideInterval = setInterval(nextSlide, 3000);
+
+      function nextSlide() {
+        slides[currentSlide].className = 'name';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].className = 'name showing';
+      }
+    </script>
+</body>
+
+</html>
