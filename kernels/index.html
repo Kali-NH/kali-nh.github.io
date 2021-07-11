@@ -20,91 +20,212 @@
       <a href="https://kali-nh.github.io/kernels" class="site-subname">Kernels</a>
     </div>
     <nav class="navigation">
-        <a href="https://t.me/kali_nh" class="navigation-link-tg">Telegram</a>
-        <a href="http://4pda.ru/forum/index.php?showtopic=952937" class="navigation-link-pda">4PDA</a>
-        <nav class="rsm">
-          <a href="https://t.me/gr_69" class="navigation-link-autor">Autor</a>
-          <a href="https://github.com/Kali-NH/Kali-NH.github.io" class="navigation-link-git">GitHub</a>
+      <nav class="tgandpda"><a href="https://t.me/kali_nh" class="navigation-link-tg">Telegram</a>
+      <a href="http://4pda.ru/forum/index.php?showtopic=952937" class="navigation-link-pda">4PDA</a>
+    </nav>
+    <nav class="rsm">
+        <a href="https://t.me/gr_69" class="navigation-link-autor">Author</a>
+        <a href="https://github.com/Kali-NH/Kali-NH.github.io" class="navigation-link-git">GitHub</a>
       </nav>
     </nav>
   </header>
   <div class="onsite-navigation">
   </div>
   <div class="container">
-    <details class="top-category"><summary>Xiaomi</summary>
-    <details class="category">
-      <summary>Redmi</summary>
-          <details open class="category">
-            <summary>Note</summary>
-            <dl>
-              <dt><a class="model" href="xiaomi/lavender">Xiaomi Redmi Note 7 <p class="codename">(lavender)</p></a>
-              <dt><a class="model" href="xiaomi/violet">Xiaomi Redmi Note 7 Pro <p class="codename">(violet)</p></a>
-              <dt><a class="model" href="xiaomi/tulip">Xiaomi Redmi Note 6 Pro <p class="codename">(tulip)</p></a>
-              <dt><a class="model" href="xiaomi/whyred">Xiaomi Redmi Note 5 (Pro) <p class="codename">(whyred)</p></a>
-              <dt><a class="model" href="xiaomi/nikel">Xiaomi Redmi Note 4 <p class="codename">(nikel)</p></a>
-              <dt><a class="model" href="xiaomi/mido">Xiaomi Redmi Note 4X <p class="codename">(mido)</p></a>
-            </dl>
+
+    <div class="tabs">
+      <button class="tablinks" onclick="openTab(event, 'tree')">Дерево</button>
+      <button class="tablinks" onclick="openTab(event, 'tiles')" id="defaultOpen">Плитки</button>
+    </div>
+    <div id="tree" class="tabcontent">
+      <p style="color: brown;">красное - не сделано</p>
+      <details class="top-category"><summary>Xiaomi</summary>
+        <details class="category">
+          <summary>Redmi</summary>
+              <details open class="category">
+                <summary>Note</summary>
+                <dl>
+                  <dt><a class="model" href="xiaomi/lavender">Xiaomi Redmi Note 7 <p class="codename">(lavender)</p></a>
+                  <dt><a class="model" href="xiaomi/violet" style="color: brown;">Xiaomi Redmi Note 7 Pro <p class="codename">(violet)</p></a>
+                  <dt><a class="model" href="xiaomi/tulip" style="color: brown;">Xiaomi Redmi Note 6 Pro <p class="codename">(tulip)</p></a>
+                  <dt><a class="model" href="xiaomi/whyred" style="color: brown;">Xiaomi Redmi Note 5 (Pro) <p class="codename">(whyred)</p></a>
+                  <dt><a class="model" href="xiaomi/nikel" style="color: brown;">Xiaomi Redmi Note 4 <p class="codename">(nikel)</p></a>
+                  <dt><a class="model" href="xiaomi/mido" style="color: brown;">Xiaomi Redmi Note 4X <p class="codename">(mido)</p></a>
+                </dl>
+          </details>
+          <dt><a class="model" href="xiaomi/000" style="color: brown;">Xiaomi Redmi 8A / Redmi 8 <p class="codename">(000)</p></a>
+          <dt><a class="model" href="xiaomi/rosy" style="color: brown;">Xiaomi Redmi 5 <p class="codename">(rosy)</p></a>
+          <dt><a class="model" href="xiaomi/vince" style="color: brown;">Xiaomi Redmi 5 Plus / Note 5 India <p class="codename">(vince)</p></a>
+          <dt><a class="model" href="xiaomi/rolex" style="color: brown;">Xiaomi Redmi 4A <p class="codename">(rolex)</p></a>
+          <dt><a class="model" href="xiaomi/santoni" style="color: brown;">Xiaomi Redmi 4X <p class="codename">(santoni)</p></a>
+          <dt><a class="model" href="xiaomi/land">Xiaomi Redmi 3S, 3X <p class="codename">(land)</p></a>
+          <dt><a class="model" href="xiaomi/ido" style="color: brown;">Xiaomi Redmi 3/3 Pro <p class="codename">(ido)</p></a>
+        </details>
+        <details class="category">
+          <summary>Mi</summary>
+          <dl>
+          <dt><a class="model" href="xiaomi/hydrogen" >Xiaomi Mi Max <p class="codename">(hydrogen)</p></a>
+          <dt><a class="model" href="xiaomi/dipper" >Xiaomi Mi 8 <p class="codename">(dipper)</p></a>
+          <dt><a class="model" href="xiaomi/equuleus" >Xiaomi Mi 8 Pro <p class="codename">(equuleus)</p></a>
+          </dl>
+        </details>
+        <details class="category">
+          <summary>Poco(phone)</summary>
+          <dl>
+              <dt ><a class="model" href="xiaomi/beryllium" >Xiaomi Pocophone F1 <p class="codename">(beryllium)</p></a>
+          </dl>
+        </details>
+        </details>
+      <details class="top-category">
+        <summary>Samsung</summary>
+        <dl>
+          <dt><a class="model" href="samsung/SM-N910F">Samsung Galaxy Note 4 <p class="codename">(SM-N910F)</p></a>
+        </dl>
       </details>
-      <dt><a class="model" href="xiaomi/000">Xiaomi Redmi 8A / Redmi 8 <p class="codename">(000)</p></a>
-      <dt><a class="model" href="xiaomi/rosy">Xiaomi Redmi 5 <p class="codename">(rosy)</p></a>
-      <dt><a class="model" href="xiaomi/vince">Xiaomi Redmi 5 Plus / Note 5 India <p class="codename">(vince)</p></a>
-      <dt><a class="model" href="xiaomi/rolex">Xiaomi Redmi 4A <p class="codename">(rolex)</p></a>
-      <dt><a class="model" href="xiaomi/santoni">Xiaomi Redmi 4X <p class="codename">(santoni)</p></a>
-      <dt><a class="model" href="xiaomi/land">Xiaomi Redmi 3S, 3X <p class="codename">(land)</p></a>
-      <dt><a class="model" href="xiaomi/ido">Xiaomi Redmi 3/3 Pro <p class="codename">(ido)</p></a>
-    </details>
-    <details class="category">
-      <summary>Mi</summary>
-      <dl>
-      <dt><a class="model" href="xiaomi/hydrogen" >Xiaomi Mi Max <p class="codename">(hydrogen)</p></a>
-      <dt><a class="model" href="xiaomi/dipper" >Xiaomi Mi 8 <p class="codename">(dipper)</p></a>
-      <dt><a class="model" href="xiaomi/equuleus" >Xiaomi Mi 8 Pro <p class="codename">(equuleus)</p></a>
-      </dl>
-    </details>
-    <details class="category">
-      <summary>Poco(phone)</summary>
-      <dl>
-          <dt ><a class="model" href="xiaomi/beryllium" >Xiaomi Pocophone F1 <p class="codename">(beryllium)</p></a>
-      </dl>
-    </details>
-    </details>
-  <details class="top-category">
-    <summary>Samsung</summary>
-    <dl>
-      <dt><a class="model" href="samsung/SM-N910F">Samsung Galaxy Note 4 <p class="codename">(SM-N910F)</p></a>
-    </dl>
-  </details>
-  <details class="top-category">
-    <summary>Lenovo</summary>
-    <dl>
-      <dt><a class="model" href="lenovo/z2_plus">Lenovo ZUK Z2 Plus <p class="codename">(z2_plus)</p></a>
-    </dl>
-  </details>
-  <details class="top-category">
-    <summary>ZTE</summary>
-    <dl>
-      <dt><a class="model" href="zte/axonmini">ZTE Axon Mini <p class="codename">(axonmini)</p></a>
-    </dl>
-  </details>
-  <details class="top-category">
-    <summary>LeEco</summary>
-    <dl>
-      <dt><a class="model" href="leeco/c106">LeEco Cool1 <p class="codename">(C106/C103/R116)</p></a>
-      <dt><a class="model" href="leeco/x520">LeEco Le 2 / LeEco Le S3 <p class="codename">(X520/X526/X527/X522)</p></a>
-    </dl>
-  </details>
-  <details class="top-category">
-    <summary>Sony</summary>
-    <dl>
-      <dt><a class="model" href="sony/yuga">Sony Xperia Z <p class="codename">(yuga)</p></a>
-    </dl>
-  </details>
-  <details class="top-category">
-    <summary>Asus</summary>
-    <dl>
-      <dt><a class="model" href="asus/x00td">Asus Zenfone Max Pro M1 <p class="codename">(X00TD)</p></a>
-    </dl>
-  </details>
+      <details class="top-category">
+        <summary>Lenovo</summary>
+        <dl>
+          <dt><a class="model" href="lenovo/z2_plus">Lenovo ZUK Z2 Plus <p class="codename">(z2_plus)</p></a>
+        </dl>
+      </details>
+      <details class="top-category">
+        <summary>ZTE</summary>
+        <dl>
+          <dt><a class="model" href="zte/axonmini">ZTE Axon Mini <p class="codename">(axonmini)</p></a>
+        </dl>
+      </details>
+      <details class="top-category">
+        <summary>LeEco</summary>
+        <dl>
+          <dt><a class="model" href="leeco/c106">LeEco Cool1 <p class="codename">(C106/C103/R116)</p></a>
+          <dt><a class="model" href="leeco/x520">LeEco Le 2 / LeEco Le S3 <p class="codename">(X520/X526/X527/X522)</p></a>
+        </dl>
+      </details>
+      <details class="top-category">
+        <summary>Sony</summary>
+        <dl>
+          <dt><a class="model" href="sony/yuga" style="color: brown;">Sony Xperia Z <p class="codename">(yuga)</p></a>
+        </dl>
+      </details>
+      <details class="top-category">
+        <summary>Asus</summary>
+        <dl>
+          <dt><a class="model" href="asus/x00td" style="color: brown;">Asus Zenfone Max Pro M1 <p class="codename">(X00TD)</p></a>
+        </dl>
+      </details>
+    </div>
+    <div id="tiles" class="tabcontent">
+      <div class="search">. . .</div>
+      <div class="titles-container">
+
+        <a href="zte/axonmini"> <div class="phone-title">
+          <div class="phone-img-container">
+            <img src="https://s.4pda.to/cNsLLJQsBbz2Ksma6ikHLiq3xVz2OxdERD4RkqvQz1fl4ZNDbAQtI.jpg?_=0" alt="" class="phone-photo">
+          </div>
+          <p class="phone-name">ZTE Axon mini</p>
+          <p class="phone-codename">axonmini</p>
+        </div></a>
+  
+      <a href="lenovo/z2_plus"> <div class="phone-title">
+        <div class="phone-img-container">
+          <img src="https://s.4pda.to/cNsLLRgTXSELSn5M5j5Qxovz0JHf1iLLz0z1NIoMIghATydr9aH5F.jpg?_=0" alt="" class="phone-photo">
+        </div>
+        <p class="phone-name">Lenovo ZUK Z2 Plus</p>
+        <p class="phone-codename">z2_plus</p>
+      </div></a>
+
+      <a href="xiaomi/lavender"> <div class="phone-title">
+        <div class="phone-img-container">
+          <img src="https://s.4pda.to/cNsLLRgTl888lG8oVWogLwRrDANJGEmeqMyx1sG2j1g0fz2prz2c.jpg?_=1550565987" alt="" class="phone-photo">
+        </div>
+        <p class="phone-name">Xiaomi Redmi Note 7</p>
+        <p class="phone-codename">lavender</p>
+      </div></a>
+
+      <a href="xiaomi/hydrogen"> <div class="phone-title">
+        <div class="phone-img-container">
+          <img src="https://s.4pda.to/cNsLLN23vv9mCn3QQTz0nNz124R2rDKkGapQJnmDQpMhBptiz0ELd.jpg?_=1508101668" alt="" class="phone-photo">
+        </div>
+        <p class="phone-name">Xiaomi Mi Max</p>
+        <p class="phone-codename">hydrogen</p>
+      </div></a>
+
+      <a href="xiaomi/land"> <div class="phone-title">
+        <div class="phone-img-container">
+          <img src="https://s.4pda.to/BlyvfVsz0eELQKOQ0rz2Qkz2IRWkHitSw0fuUb3RP45Nz1MZ9vWUho.jpg?_=0" alt="" class="phone-photo">
+        </div>
+        <p class="phone-name">Xiaomi Redmi 3S, 3X </p>
+        <p class="phone-codename">land</p>
+      </div></a>
+
+      <a href="xiaomi/dipper"> <div class="phone-title">
+        <div class="phone-img-container">
+          <img src="https://s.4pda.to/cNsLLlIQ2PD1z2tofaY3Q2Lm4KqKsSNiKNc6oMoQJcpNbm0prVM.jpg?_=1530695630" alt="" class="phone-photo">
+        </div>
+        <p class="phone-name">Xiaomi Mi 8 </p>
+        <p class="phone-codename">dipper</p>
+      </div></a>
+
+      <a href="xiaomi/equuleus"> <div class="phone-title">
+        <div class="phone-img-container">
+          <img src="https://s.4pda.to/cNsLLhglIbH5oz0fGg19n7JiwHz1bB69S0K5GrwSHXRMEQGmBPnz0.jpg?_=1536738006" alt="" class="phone-photo">
+        </div>
+        <p class="phone-name">Xiaomi Mi 8 Pro </p>
+        <p class="phone-codename">equuleus</p>
+      </div></a>
+
+      <a href="xiaomi/beryllium"> <div class="phone-title">
+        <div class="phone-img-container">
+          <img src="https://s.4pda.to/cNsLL7oofuivwMtBmuMnl3S2CURml73Z3XACr4DNCIax3UWRK4.jpg?_=1536598454" alt="" class="phone-photo">
+        </div>
+        <p class="phone-name">Xiaomi Pocophone F1 </p>
+        <p class="phone-codename">beryllium</p>
+      </div></a>
+
+      <a href="samsung/SM-N910F"> <div class="phone-title">
+        <div class="phone-img-container">
+          <img src="https://s.4pda.to/cNsLLF2P35bD4Zz1ya230jz25z0z0OU4b210qiSfixDtSwWnILoMfX.jpg?_=0" alt="" class="phone-photo">
+        </div>
+        <p class="phone-name">Samsung Galaxy Note 4 </p>
+        <p class="phone-codename">SM-N910F</p>
+      </div></a>
+
+      <a href="leeco/c106"> <div class="phone-title">
+        <div class="phone-img-container">
+          <img src="https://s.4pda.to/cNsLLJANSRWNmtCH9Vz1W44WUvgxfvCGlXtUCLK5ZUz2f6cdlZug.jpg?_=0" alt="" class="phone-photo">
+        </div>
+        <p class="phone-name">LeEco Cool1 </p>
+        <p class="phone-codename">C106/C103/R116</p>
+      </div></a>
+
+      <a href="leeco/x520"> <div class="phone-title">
+        <div class="phone-img-container">
+          <img src="https://s.4pda.to/cNsLLhgkKOSXiyoZqo7upGIZCItJsYJz0prvmJRTVuWvEobAw7A.jpg?_=0" alt="" class="phone-photo">
+        </div>
+        <p class="phone-name">LeEco Le 2 / LeEco Le S3 </p>
+        <p class="phone-codename">X520/X526/X527/X522</p>
+      </div></a>
+    
+    </div>
   </div>
+  </div>
+  <script type="text/javascript">
+  document.getElementById("defaultOpen").click();
+  function openTab(evt, TabName) {
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(TabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}</script>
 </body>
 </html>
