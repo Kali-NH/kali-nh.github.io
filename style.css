@@ -25,12 +25,13 @@ body {
   margin-left: 15px;
   font-weight: 700;
   margin-top: 10px;
+  margin-right: 10px;
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
 .site-subname {
   font-size: 17px;
-  margin-left: 15px;
+  margin-left: 8px;
   font-weight: 300;
   margin-top: 10px;
   margin-bottom: 0;
@@ -39,6 +40,10 @@ body {
 }
 .navigation {
   display: flex;
+}
+.tgandpda {
+  display: flex;
+  height: 50px;
 }
 .navigation-link-pda,
 .navigation-link-tg {
@@ -49,15 +54,23 @@ body {
   width: 75px;
   font-size: 15px;
   font-weight: 700;
-  padding-top: 16px;
+  padding-top: 17px;
   background-position: center center;
   background-size: cover;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+.navigation-link-pda:hover,
+.navigation-link-tg:hover {
+  text-shadow: 0px 0px 4px rgb(255, 255, 255);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
 .navigation-link-pda {
-  background-image: url(img/4pdab.jpeg);
+  background-image: url(/img/4pdab.jpeg);
 }
 .navigation-link-tg {
-  background-image: url(img/tgb.jpeg);
+  background-image: url(/img/tgb.jpeg);
 }
 .rsm {
   border-left: 1px solid #464646;
@@ -71,6 +84,14 @@ body {
   color: #9e9e9e;
   width: 75px;
   font-size: 15px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+.navigation-link-autor:hover,
+.navigation-link-git:hover {
+  text-shadow: 0px 0px 5px rgb(128, 128, 128);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
 .onsite-navigation {
   background-image: -webkit-linear-gradient(top, black, rgb(43, 40, 40));
@@ -141,4 +162,84 @@ body {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: #ffffff28;
+}
+@media (max-width: 1000px) {
+  .phone {
+    min-width: 100px;
+  }
+  .phone-container {
+    display: block;
+  }
+  .phone-links {
+    display: flex;
+    margin-top: 10px;
+  }
+  .phone-links-link {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .kernel-name {
+    font-size: 20px;
+  }
+  .kernel-leftmiddle {
+    display: block;
+  }
+  .kernel-middle {
+    margin-left: 0;
+    padding-top: 0;
+  }
+  .unknown-ico,
+  .no-ico {
+    width: 18px;
+    height: 18px;
+  }
+  .yes-ico {
+    height: 20px;
+    width: 20px;
+  }
+  .content {
+    font-size: 15px;
+  }
+}
+@media (max-width: 750px) {
+  body::-webkit-scrollbar {
+    width: 4px;
+  }
+  .header {
+    display: block;
+  }
+  .header-left {
+    justify-content: center;
+  }
+  .navigation {
+    display: block;
+  }
+  .tgandpda {
+    justify-content: center;
+  }
+  .navigation-link-tg {
+    margin-left: 5px;
+    margin-right: 0px;
+  }
+  .navigation-link-pda {
+    margin-right: 5px;
+  }
+  .rsm {
+    display: flex;
+    justify-content: center;
+    border-left: none;
+  }
+  .phone-links {
+    justify-content: center;
+  }
+  .content {
+    font-size: 13px;
+  }
+}
+@media (max-width: 379px) {
+  .header:before {
+    padding-left: 5px;
+    content: "Сайт не адаптирован под диcплей меньше 380 пикселей.";
+    color: red;
+  }
 }
